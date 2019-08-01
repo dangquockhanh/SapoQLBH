@@ -17,7 +17,16 @@
                     <view key="view" contentMode="scaleToFill" id="6tk-4F-dpv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.096610870959999998" blue="0.18082018629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-62-PlH">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Sản phẩm" id="hIg-hn-CCL"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="4gz-kV-P1H"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sản phẩm" image="icons8-product_filled" id="B8u-sg-VDt">
@@ -29,24 +38,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zt5-mn-mEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013.0434782608696" y="94.419642857142847"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="sX0-25-PhG">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gbz-hI-iRg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lez-35-wQH">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="AaX-1e-upF" kind="relationship" relationship="rootViewController" id="xJU-0M-70g"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vw2-gA-wKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="102.89855072463769" y="94.419642857142847"/>
         </scene>
     </scenes>
     <resources>
