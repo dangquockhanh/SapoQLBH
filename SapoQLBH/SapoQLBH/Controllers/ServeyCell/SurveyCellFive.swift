@@ -10,9 +10,13 @@ import UIKit
 
 class SurveyCellFive: UITableViewCell {
 
+    @IBOutlet weak var viewCell: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+       viewCell.layer.cornerRadius = 4
+        viewCell.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

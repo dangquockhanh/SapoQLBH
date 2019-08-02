@@ -28,12 +28,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JJE-EZ-mKx">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JJE-EZ-mKx">
                                 <rect key="frame" x="33.5" y="61" width="280.5" height="244.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="yI2-A0-wce">
-                                        <rect key="frame" x="0.0" y="0.0" width="280.5" height="219.5"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="ic_dashboard_intro_create_order" translatesAutoresizingMaskIntoConstraints="NO" id="yI2-A0-wce">
+                                        <rect key="frame" x="0.0" y="0.0" width="280.5" height="227.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Từ 26 thg 7 - 1 thg 8 chưa có đơn hàng nào" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7Y-B8-oZ6">
                                         <rect key="frame" x="0.0" y="227.5" width="280.5" height="17"/>
@@ -74,10 +74,13 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewCell" destination="num-jp-O5o" id="MnQ-v5-otf"/>
+            </connections>
             <point key="canvasLocation" x="171.73913043478262" y="223.32589285714283"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Image" width="258" height="160"/>
+        <image name="ic_dashboard_intro_create_order" width="99.5" height="96"/>
     </resources>
 </document>

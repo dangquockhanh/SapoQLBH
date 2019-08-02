@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C10B23D22F3D1F90057A478 /* OrderCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10B23B22F3D1F90057A478 /* OrderCellOne.swift */; };
+		1C10B23E22F3D1F90057A478 /* OrderCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C10B23C22F3D1F90057A478 /* OrderCellOne.xib */; };
+		1C10B24122F3E6550057A478 /* OrderCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10B23F22F3E6550057A478 /* OrderCellTwo.swift */; };
+		1C10B24222F3E6550057A478 /* OrderCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C10B24022F3E6550057A478 /* OrderCellTwo.xib */; };
+		1C10B24522F3F16E0057A478 /* OrderCellSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10B24322F3F16E0057A478 /* OrderCellSeparator.swift */; };
+		1C10B24622F3F16E0057A478 /* OrderCellSeparator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C10B24422F3F16E0057A478 /* OrderCellSeparator.xib */; };
 		1CD099D122F1C4BE0032EC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099D022F1C4BE0032EC1D /* AppDelegate.swift */; };
 		1CD099D622F1C4BE0032EC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D422F1C4BE0032EC1D /* Main.storyboard */; };
 		1CD099D822F1C4BF0032EC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D722F1C4BF0032EC1D /* Assets.xcassets */; };
@@ -33,9 +39,17 @@
 		1CE76A8622F2E64D00FC5530 /* SurveyCellFour.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE76A8422F2E64D00FC5530 /* SurveyCellFour.xib */; };
 		1CE987E822F2FB0000B4A478 /* SurveyCellFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE987E622F2FB0000B4A478 /* SurveyCellFive.swift */; };
 		1CE987E922F2FB0000B4A478 /* SurveyCellFive.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE987E722F2FB0000B4A478 /* SurveyCellFive.xib */; };
+		1CECB57322F34D5700D06840 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CECB57122F34D5700D06840 /* OrderCell.swift */; };
+		1CECB57422F34D5700D06840 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CECB57222F34D5700D06840 /* OrderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C10B23B22F3D1F90057A478 /* OrderCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellOne.swift; sourceTree = "<group>"; };
+		1C10B23C22F3D1F90057A478 /* OrderCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCellOne.xib; sourceTree = "<group>"; };
+		1C10B23F22F3E6550057A478 /* OrderCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellTwo.swift; sourceTree = "<group>"; };
+		1C10B24022F3E6550057A478 /* OrderCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCellTwo.xib; sourceTree = "<group>"; };
+		1C10B24322F3F16E0057A478 /* OrderCellSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellSeparator.swift; sourceTree = "<group>"; };
+		1C10B24422F3F16E0057A478 /* OrderCellSeparator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCellSeparator.xib; sourceTree = "<group>"; };
 		1CD099CD22F1C4BE0032EC1D /* SapoQLBH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapoQLBH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD099D022F1C4BE0032EC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CD099D522F1C4BE0032EC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +78,8 @@
 		1CE76A8422F2E64D00FC5530 /* SurveyCellFour.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyCellFour.xib; sourceTree = "<group>"; };
 		1CE987E622F2FB0000B4A478 /* SurveyCellFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCellFive.swift; sourceTree = "<group>"; };
 		1CE987E722F2FB0000B4A478 /* SurveyCellFive.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyCellFive.xib; sourceTree = "<group>"; };
+		1CECB57122F34D5700D06840 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		1CECB57222F34D5700D06840 /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				1CD099E922F1CCB10032EC1D /* SurveyViewController.swift */,
-				1CD099EB22F1CCC80032EC1D /* ProductViewController.swift */,
 				1CD099ED22F1CCF50032EC1D /* OrderViewController.swift */,
+				1CD099EB22F1CCC80032EC1D /* ProductViewController.swift */,
 				1CD099EF22F1CD010032EC1D /* ReportViewController.swift */,
 				1CD099F122F1CD220032EC1D /* AddViewController.swift */,
 			);
@@ -124,10 +140,10 @@
 			children = (
 				1CD099D422F1C4BE0032EC1D /* Main.storyboard */,
 				1CD099F622F1CD7C0032EC1D /* Survey.storyboard */,
+				1CD099FF22F1D16F0032EC1D /* Order.storyboard */,
 				1CD099F822F1CF730032EC1D /* Product.storyboard */,
 				1CD099FA22F1CF810032EC1D /* Report.storyboard */,
 				1CD099FC22F1CF930032EC1D /* Add.storyboard */,
-				1CD099FF22F1D16F0032EC1D /* Order.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -161,10 +177,26 @@
 			isa = PBXGroup;
 			children = (
 				1CD099E222F1C9250032EC1D /* HomeViewController.swift */,
+				1CECB56F22F331E000D06840 /* OrderCell */,
 				1CD099E422F1CC0D0032EC1D /* ViewController */,
 				1CE76A7122F2843700FC5530 /* ServeyCell */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1CECB56F22F331E000D06840 /* OrderCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CECB57122F34D5700D06840 /* OrderCell.swift */,
+				1CECB57222F34D5700D06840 /* OrderCell.xib */,
+				1C10B23B22F3D1F90057A478 /* OrderCellOne.swift */,
+				1C10B23C22F3D1F90057A478 /* OrderCellOne.xib */,
+				1C10B23F22F3E6550057A478 /* OrderCellTwo.swift */,
+				1C10B24022F3E6550057A478 /* OrderCellTwo.xib */,
+				1C10B24322F3F16E0057A478 /* OrderCellSeparator.swift */,
+				1C10B24422F3F16E0057A478 /* OrderCellSeparator.xib */,
+			);
+			path = OrderCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,15 +257,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CECB57422F34D5700D06840 /* OrderCell.xib in Resources */,
 				1CE76A7E22F29EE300FC5530 /* SurveyCellTwo.xib in Resources */,
 				1CD099DB22F1C4BF0032EC1D /* LaunchScreen.storyboard in Resources */,
 				1CD099F922F1CF730032EC1D /* Product.storyboard in Resources */,
 				1CD099FD22F1CF930032EC1D /* Add.storyboard in Resources */,
 				1CD09A0022F1D16F0032EC1D /* Order.storyboard in Resources */,
+				1C10B24622F3F16E0057A478 /* OrderCellSeparator.xib in Resources */,
 				1CE76A8622F2E64D00FC5530 /* SurveyCellFour.xib in Resources */,
+				1C10B24222F3E6550057A478 /* OrderCellTwo.xib in Resources */,
 				1CD099FB22F1CF810032EC1D /* Report.storyboard in Resources */,
 				1CD099D822F1C4BF0032EC1D /* Assets.xcassets in Resources */,
 				1CD099F722F1CD7C0032EC1D /* Survey.storyboard in Resources */,
+				1C10B23E22F3D1F90057A478 /* OrderCellOne.xib in Resources */,
 				1CE76A7522F2846200FC5530 /* SurveyTableCell.xib in Resources */,
 				1CE76A8222F2C78B00FC5530 /* SurveyCellThree.xib in Resources */,
 				1CE987E922F2FB0000B4A478 /* SurveyCellFive.xib in Resources */,
@@ -250,15 +286,19 @@
 			files = (
 				1CD099EC22F1CCC80032EC1D /* ProductViewController.swift in Sources */,
 				1CE76A8122F2C78B00FC5530 /* SurveyCellThree.swift in Sources */,
+				1CECB57322F34D5700D06840 /* OrderCell.swift in Sources */,
+				1C10B24122F3E6550057A478 /* OrderCellTwo.swift in Sources */,
 				1CD099F222F1CD220032EC1D /* AddViewController.swift in Sources */,
 				1CD099D122F1C4BE0032EC1D /* AppDelegate.swift in Sources */,
 				1CD099E322F1C9250032EC1D /* HomeViewController.swift in Sources */,
 				1CE76A7D22F29EE300FC5530 /* SurveyCellTwo.swift in Sources */,
+				1C10B23D22F3D1F90057A478 /* OrderCellOne.swift in Sources */,
 				1CE987E822F2FB0000B4A478 /* SurveyCellFive.swift in Sources */,
 				1CD099EA22F1CCB10032EC1D /* SurveyViewController.swift in Sources */,
 				1CD099EE22F1CCF50032EC1D /* OrderViewController.swift in Sources */,
 				1CE76A7422F2846200FC5530 /* SurveyTableCell.swift in Sources */,
 				1CE76A8522F2E64D00FC5530 /* SurveyCellFour.swift in Sources */,
+				1C10B24522F3F16E0057A478 /* OrderCellSeparator.swift in Sources */,
 				1CD099F022F1CD010032EC1D /* ReportViewController.swift in Sources */,
 				1CE76A7822F28A1500FC5530 /* Setting.swift in Sources */,
 			);

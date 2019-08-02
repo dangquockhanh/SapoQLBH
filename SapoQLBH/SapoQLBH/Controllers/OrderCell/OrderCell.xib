@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="267" id="DUB-Jf-fSJ" customClass="OrderCell" customModule="SapoQLBH" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="267"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DUB-Jf-fSJ" id="fm1-Gx-wA7">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="266.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hju-rK-MyR">
+                        <rect key="frame" x="35" y="68.5" width="352" height="200"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5h-Gt-L6e">
+                                <rect key="frame" x="151" y="58.5" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5C7-0g-oW2"/>
+                                    <constraint firstAttribute="width" constant="50" id="CU0-qK-7v4"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ic_order_dashboard_create_order"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tạo đơn online" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asr-li-Y4Z">
+                                <rect key="frame" x="110" y="128.5" width="132" height="35.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="asr-li-Y4Z" firstAttribute="top" secondItem="g5h-Gt-L6e" secondAttribute="bottom" constant="20" id="1nu-3a-EAP"/>
+                            <constraint firstItem="asr-li-Y4Z" firstAttribute="centerX" secondItem="Hju-rK-MyR" secondAttribute="centerX" id="JxU-dm-0sa"/>
+                            <constraint firstItem="g5h-Gt-L6e" firstAttribute="centerX" secondItem="Hju-rK-MyR" secondAttribute="centerX" id="NjE-KU-u79"/>
+                            <constraint firstAttribute="height" constant="200" id="QE3-A4-Hmc"/>
+                            <constraint firstItem="g5h-Gt-L6e" firstAttribute="centerY" secondItem="Hju-rK-MyR" secondAttribute="centerY" multiplier="1/1.2" id="Ude-aZ-8NY"/>
+                            <constraint firstAttribute="bottom" secondItem="asr-li-Y4Z" secondAttribute="bottom" constant="36" id="hRa-6d-tGH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Hju-rK-MyR" secondAttribute="trailing" constant="35" id="C9V-4v-Aiq"/>
+                    <constraint firstItem="Hju-rK-MyR" firstAttribute="leading" secondItem="fm1-Gx-wA7" secondAttribute="leading" constant="35" id="gFz-KF-Elg"/>
+                    <constraint firstAttribute="bottom" secondItem="Hju-rK-MyR" secondAttribute="bottom" constant="-2" id="iSP-15-4jx"/>
+                    <constraint firstItem="Hju-rK-MyR" firstAttribute="centerX" secondItem="fm1-Gx-wA7" secondAttribute="centerX" id="oOb-x9-qhM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="viewCell" destination="Hju-rK-MyR" id="LdC-XD-3GU"/>
+            </connections>
+            <point key="canvasLocation" x="297.10144927536237" y="107.47767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_order_dashboard_create_order" width="40" height="40"/>
+    </resources>
+</document>

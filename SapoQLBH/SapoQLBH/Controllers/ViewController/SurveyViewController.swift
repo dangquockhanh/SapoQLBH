@@ -8,21 +8,60 @@
 
 import UIKit
 
+// Define surveys cell
+enum SurveyCellType: Int {
+    case one = 0
+    case two
+    case three
+    case four
+    case five
+}
+
 class SurveyViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    private let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerCell()
+        self.setupTableView()
+    }
+    
+    private func setupTableView() {
+        self.registerCell()
+        self.setupRefreshControl()
     }
     
     func registerCell() {
-        tableView.register(UINib(nibName: identifierManager.surveyTableViewCellOne, bundle: nil), forCellReuseIdentifier: identifierManager.surveyTableViewCellOne)
-        tableView.register(UINib(nibName: identifierManager.surveyTableViewCellTwo, bundle: nil), forCellReuseIdentifier: identifierManager.surveyTableViewCellTwo)
-        tableView.register(UINib(nibName: identifierManager.surveyTableViewCellThree, bundle: nil), forCellReuseIdentifier: identifierManager.surveyTableViewCellThree)
-        tableView.register(UINib(nibName: identifierManager.surveyTableViewCellFour, bundle: nil), forCellReuseIdentifier: identifierManager.surveyTableViewCellFour)
-        tableView.register(UINib(nibName: identifierManager.surveyTableViewCellFive, bundle: nil), forCellReuseIdentifier: identifierManager.surveyTableViewCellFive)
+        tableView.register(UINib(nibName: IdentifierManager.surveyTableViewCellOne, bundle: nil), forCellReuseIdentifier: IdentifierManager.surveyTableViewCellOne)
+        tableView.register(UINib(nibName: IdentifierManager.surveyTableViewCellTwo, bundle: nil), forCellReuseIdentifier: IdentifierManager.surveyTableViewCellTwo)
+        tableView.register(UINib(nibName: IdentifierManager.surveyTableViewCellThree, bundle: nil), forCellReuseIdentifier: IdentifierManager.surveyTableViewCellThree)
+        tableView.register(UINib(nibName: IdentifierManager.surveyTableViewCellFour, bundle: nil), forCellReuseIdentifier: IdentifierManager.surveyTableViewCellFour)
+        tableView.register(UINib(nibName: IdentifierManager.surveyTableViewCellFive, bundle: nil), forCellReuseIdentifier: IdentifierManager.surveyTableViewCellFive)
+    }
+    
+    fileprivate func setupRefreshControl() {
+        self.tableView.refreshControl = refreshControl
+        // Add actions for refresh control
+        self.refreshControl.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+        // Custom title refresh control
+//        self.refreshControl.attributedTitle = NSAttributedString(string: "Loading...")
+        // Custom tint color of refresh color
+//        self.refreshControl.tintColor = .red
+    }
+    
+    @objc func handleRefreshControl() {
+        // Handle data before end refresh control
+        self.fetchData()
+    }
+    
+    // Handle fetch data from server
+    private func fetchData() {
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        self.refreshControl.endRefreshing()
     }
 }
 
@@ -33,26 +72,39 @@ extension SurveyViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: identifierManager.surveyTableViewCellOne, for: indexPath) as? SurveyTableCell
-            cell?.dateLabel.text = "7 ngày qua"
-            cell!.durationLabel.text = "25 thg 7 - 31 thg 7"
-            return cell!
-        case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier:identifierManager.surveyTableViewCellTwo, for: indexPath) as? SurveyCellTwo
-            return cell!
-        case 2:
-             let cell = tableView.dequeueReusableCell(withIdentifier: identifierManager.surveyTableViewCellThree, for: indexPath) as? SurveyCellThree
-             return cell!
-        case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: identifierManager.surveyTableViewCellFour, for: indexPath) as? SurveyCellFour
-            return cell!
-        case 4:
-            let cell = tableView.dequeueReusableCell(withIdentifier: identifierManager.surveyTableViewCellFive, for: indexPath) as? SurveyCellFive
-            return cell!
+        let defaultCell = UITableViewCell()
+        // Using enum servey cell type
+        // Check before using
+        guard let cellType = SurveyCellType(rawValue: indexPath.row) else { return defaultCell }
+        
+        switch cellType {
+        case .one:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.surveyTableViewCellOne, for: indexPath) as? SurveyTableCell else {
+                return defaultCell
+            }
+            cell.dateLabel.text = "7 ngày qua"
+            cell.durationLabel.text = "25 thg 7 - 31 thg 7"
+            return cell
+        case .two:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier:IdentifierManager.surveyTableViewCellTwo, for: indexPath) as? SurveyCellTwo else {
+                return defaultCell
+            }
+            return cell
+        case .three:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.surveyTableViewCellThree, for: indexPath) as? SurveyCellThree else {
+                return defaultCell
+            }
+             return cell
+        case .four:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.surveyTableViewCellFour, for: indexPath) as? SurveyCellFour else {
+                return defaultCell
+            }
+            return cell
         default:
-            return UITableViewCell()
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.surveyTableViewCellFive, for: indexPath) as? SurveyCellFive else {
+                return defaultCell
+            }
+            return cell
         }
     }
 }
@@ -60,20 +112,17 @@ extension SurveyViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension SurveyViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.row {
-        case 0:
+        guard let cellType = SurveyCellType(rawValue: indexPath.row) else { return 0 }
+        
+        switch cellType {
+        case .one:
             return 70
-        case 1:
+        case .two:
             return 170
-        case 2:
+        case .three:
             return 150
-        case 3:
-            return 350
-        case 4:
-            return 350
-
         default:
-            return CGFloat(0)
+            return 350
         }
     }
 }

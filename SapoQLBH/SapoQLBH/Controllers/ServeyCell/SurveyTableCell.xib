@@ -23,11 +23,11 @@
                         <rect key="frame" x="10" y="10" width="400" height="82.5"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-ID-kZ2">
-                                <rect key="frame" x="365" y="17" width="25" height="49"/>
-                                <state key="normal" image="icons8-calendar"/>
+                                <rect key="frame" x="371" y="17" width="19" height="49"/>
+                                <state key="normal" image="CalendarIcon"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sqx-M9-r0J">
-                                <rect key="frame" x="10" y="17" width="335" height="49"/>
+                                <rect key="frame" x="10" y="17" width="341" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Ngày Qua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfh-9n-ovL">
                                         <rect key="frame" x="0.0" y="0.0" width="89.5" height="20.5"/>
@@ -70,11 +70,12 @@
                 <outlet property="dateLabel" destination="jfh-9n-ovL" id="6Wa-9D-6pO"/>
                 <outlet property="datePickerButton" destination="4Oo-ID-kZ2" id="1i9-Jv-x2Q"/>
                 <outlet property="durationLabel" destination="2ly-vR-QZG" id="LyP-dI-IZh"/>
+                <outlet property="viewCell" destination="KcF-7N-yb8" id="cRq-aG-5D1"/>
             </connections>
             <point key="canvasLocation" x="120.28985507246378" y="51.897321428571423"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="icons8-calendar" width="25" height="25"/>
+        <image name="CalendarIcon" width="19" height="19"/>
     </resources>
 </document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderCellTwo" rowHeight="103" id="KGk-i7-Jjw" customClass="OrderCellTwo" customModule="SapoQLBH" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="471" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Tmo-02-ubQ">
+                        <rect key="frame" x="60" y="10" width="278" height="82.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bán hàng tại cửa hàng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-Eg-fYx">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="41.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Bán hàng trên Sapo POS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYO-pX-iTl">
+                                <rect key="frame" x="0.0" y="41.5" width="129" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-Bv-zXn">
+                        <rect key="frame" x="428" y="10" width="43" height="82.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="43" id="Vcy-aM-XGE"/>
+                        </constraints>
+                        <state key="normal" image="ic_external_link"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_order_dashboard_pos" translatesAutoresizingMaskIntoConstraints="NO" id="n4q-Ru-2eZ">
+                        <rect key="frame" x="20" y="37" width="29" height="29"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tmo-02-ubQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="63G-V1-EoK"/>
+                    <constraint firstItem="Ovz-Bv-zXn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7c6-0o-RFv"/>
+                    <constraint firstItem="Ovz-Bv-zXn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Daq-b8-1HN"/>
+                    <constraint firstItem="Tmo-02-ubQ" firstAttribute="leading" secondItem="n4q-Ru-2eZ" secondAttribute="trailing" constant="11" id="HWo-dK-i7w"/>
+                    <constraint firstItem="Ovz-Bv-zXn" firstAttribute="leading" secondItem="Tmo-02-ubQ" secondAttribute="trailing" constant="90" id="JNb-hF-LTS"/>
+                    <constraint firstItem="n4q-Ru-2eZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="0.25" id="NGH-4l-S5Q"/>
+                    <constraint firstItem="Tmo-02-ubQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RZd-nt-O1U"/>
+                    <constraint firstAttribute="bottom" secondItem="Tmo-02-ubQ" secondAttribute="bottom" constant="10" id="XpW-O0-QWe"/>
+                    <constraint firstItem="Tmo-02-ubQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="afM-X5-6yR"/>
+                    <constraint firstItem="n4q-Ru-2eZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jhB-gl-Apc"/>
+                    <constraint firstAttribute="bottom" secondItem="Ovz-Bv-zXn" secondAttribute="bottom" constant="10" id="utA-FH-yNO"/>
+                    <constraint firstAttribute="trailing" secondItem="Ovz-Bv-zXn" secondAttribute="trailing" id="zO9-JO-4Pj"/>
+                    <constraint firstItem="Tmo-02-ubQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="zeV-PP-vr1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="244.20289855072465" y="143.63839285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_external_link" width="18" height="18"/>
+        <image name="ic_order_dashboard_pos" width="24" height="24"/>
+    </resources>
+</document>

@@ -201,6 +201,12 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewFour" destination="Kz7-3q-9Gw" id="Llx-8g-i90"/>
+                <outlet property="viewOne" destination="abv-FW-KOh" id="GBu-Gd-l9J"/>
+                <outlet property="viewThree" destination="rTA-b6-SfL" id="0fJ-s3-4Am"/>
+                <outlet property="viewTwo" destination="m8e-3N-wOb" id="iOW-0Q-stD"/>
+            </connections>
             <point key="canvasLocation" x="489.85507246376818" y="256.80803571428572"/>
         </tableViewCell>
     </objects>

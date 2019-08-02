@@ -8,11 +8,15 @@
 
 import Foundation
 
-class identifierManager {
+class IdentifierManager {
     static let surveyTableViewCellOne =  "SurveyTableCell"
     static let surveyTableViewCellTwo =  "SurveyCellTwo"
     static let surveyTableViewCellThree =  "SurveyCellThree"
     static let surveyTableViewCellFour =  "SurveyCellFour"
     static let surveyTableViewCellFive =  "SurveyCellFive"
     
+    static let orderCell = "OrderCell"
+    static let orderCellOne = "OrderCellOne"
+    static let orderCellTwo = "OrderCellTwo"
+    static let  orderCellSeparator = "OrderCellSeparator"
 }

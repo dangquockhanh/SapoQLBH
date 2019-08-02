@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duD-4G-EjO">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
                                 <items>
-                                    <navigationItem title="Chi nhánh mặc định" id="Kj0-js-1mT">
-                                        <barButtonItem key="rightBarButtonItem" image="icons8-location_filled" id="BIz-kD-Mho">
+                                    <navigationItem title="Chi nhánh mặc định" prompt=" " id="Kj0-js-1mT">
+                                        <barButtonItem key="rightBarButtonItem" image="ic_dashboard_location_filter" id="BIz-kD-Mho">
                                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zq1-qT-aNV">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="78" width="414" height="609"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="oI5-WM-gP3" id="FM4-c1-FUr"/>
@@ -37,19 +37,19 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="es5-k5-UXZ" firstAttribute="bottom" secondItem="zq1-qT-aNV" secondAttribute="bottom" id="4XN-ci-kOY"/>
                             <constraint firstItem="duD-4G-EjO" firstAttribute="trailing" secondItem="zq1-qT-aNV" secondAttribute="trailing" id="9u1-z8-6vz"/>
                             <constraint firstItem="zq1-qT-aNV" firstAttribute="top" secondItem="duD-4G-EjO" secondAttribute="bottom" id="E7r-QC-phl"/>
                             <constraint firstItem="duD-4G-EjO" firstAttribute="leading" secondItem="zq1-qT-aNV" secondAttribute="leading" id="OL0-bc-4Ww"/>
-                            <constraint firstItem="duD-4G-EjO" firstAttribute="top" secondItem="es5-k5-UXZ" secondAttribute="top" id="SUi-FO-iVo"/>
+                            <constraint firstItem="duD-4G-EjO" firstAttribute="top" secondItem="UDF-eW-CUY" secondAttribute="top" id="SUi-FO-iVo"/>
                             <constraint firstItem="es5-k5-UXZ" firstAttribute="trailing" secondItem="zq1-qT-aNV" secondAttribute="trailing" id="azu-z1-9ux"/>
                             <constraint firstItem="zq1-qT-aNV" firstAttribute="leading" secondItem="es5-k5-UXZ" secondAttribute="leading" id="jaf-Wt-QFj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="es5-k5-UXZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tổng quan" image="icons8-home_filled" id="UUj-gT-gpm">
+                    <tabBarItem key="tabBarItem" title="Tổng quan" image="ic_tab_bar_dashboard" selectedImage="ic_tab_bar_dashboard" id="UUj-gT-gpm">
                         <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Chi nhánh mặc định" id="3RM-9t-Wvr">
@@ -68,7 +68,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-home_filled" width="25" height="25"/>
+        <image name="ic_dashboard_location_filter" width="16" height="22"/>
+        <image name="ic_tab_bar_dashboard" width="22" height="22"/>
         <image name="icons8-location_filled" width="25" height="25"/>
     </resources>
 </document>
