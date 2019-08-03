@@ -55,11 +55,13 @@ extension OrderViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellOne, for: indexPath) as? OrderCellOne else { return UITableViewCell() }
             cell.textLabel?.text = "Danh sách đơn hàng"
             cell.imageView?.image = #imageLiteral(resourceName: "ic_order_dashboard_orders")
+             cell.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
             return cell
         case .three:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellOne, for: indexPath) as? OrderCellOne else { return UITableViewCell() }
             cell.textLabel?.text = "Khách trả hàng"
             cell.imageView?.image = #imageLiteral(resourceName: "ic_order_dashboard_order_returns")
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
             return cell
         case .four:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellOne, for: indexPath) as? OrderCellOne else { return UITableViewCell() }
@@ -94,4 +96,9 @@ extension OrderViewController: UITableViewDelegate {
             return CGFloat()
         }
     }
+    
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        
+//    }
 }
+

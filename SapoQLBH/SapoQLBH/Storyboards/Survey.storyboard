@@ -37,7 +37,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94135457277297974" green="0.93692940473556519" blue="0.96078747510910034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="es5-k5-UXZ" firstAttribute="bottom" secondItem="zq1-qT-aNV" secondAttribute="bottom" id="4XN-ci-kOY"/>
                             <constraint firstItem="duD-4G-EjO" firstAttribute="trailing" secondItem="zq1-qT-aNV" secondAttribute="trailing" id="9u1-z8-6vz"/>

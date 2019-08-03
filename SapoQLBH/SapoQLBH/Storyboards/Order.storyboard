@@ -24,31 +24,21 @@
                                     <navigationItem title="Đơn hàng" prompt="  " id="1ua-n5-iqF"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-sk-1Ka">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v1n-sk-1Ka">
                                 <rect key="frame" x="0.0" y="78" width="414" height="609"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="zDY-4b-Gza">
-                                    <rect key="frame" x="0.0" y="72" width="414" height="3"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Usj-OS-7OL">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.82363569736480713" green="0.81939250230789185" blue="0.83529627323150635" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="o73-Eu-V4y">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o73-Eu-V4y" id="ZbT-wJ-BAt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="OxW-vG-nTj" id="hhS-EH-wvT"/>
                                     <outlet property="delegate" destination="OxW-vG-nTj" id="Tel-Fj-PDy"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99950428299492389" green="0.99950428299492389" blue="0.99950428299492389" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.93692940473556519" blue="0.96078747510910034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="w2U-Je-4se" firstAttribute="trailing" secondItem="uAg-v4-ihI" secondAttribute="trailing" id="FKK-mF-iRK"/>
                             <constraint firstItem="uAg-v4-ihI" firstAttribute="trailing" secondItem="v1n-sk-1Ka" secondAttribute="trailing" id="SKR-fN-LeL"/>
