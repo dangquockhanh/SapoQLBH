@@ -23,11 +23,11 @@ class OrderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupOederCell()
+        setupOrderCell()
     
     }
     
-    func setupOederCell() {
+    func setupOrderCell() {
         orderTableView.register(UINib(nibName: IdentifierManager.orderCell, bundle: nil), forCellReuseIdentifier: IdentifierManager.orderCell)
          orderTableView.register(UINib(nibName: IdentifierManager.orderCellOne, bundle: nil), forCellReuseIdentifier: IdentifierManager.orderCellOne)
          orderTableView.register(UINib(nibName: IdentifierManager.orderCellTwo, bundle: nil), forCellReuseIdentifier: IdentifierManager.orderCellTwo)
@@ -55,13 +55,13 @@ extension OrderViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellOne, for: indexPath) as? OrderCellOne else { return UITableViewCell() }
             cell.textLabel?.text = "Danh sách đơn hàng"
             cell.imageView?.image = #imageLiteral(resourceName: "ic_order_dashboard_orders")
-             cell.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
+             cell.separatorInset = UIEdgeInsets(top: 0, left: 60, bottom: 0, right: 0)
             return cell
         case .three:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellOne, for: indexPath) as? OrderCellOne else { return UITableViewCell() }
             cell.textLabel?.text = "Khách trả hàng"
             cell.imageView?.image = #imageLiteral(resourceName: "ic_order_dashboard_order_returns")
-            cell.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 60, bottom: 0, right: 0)
             return cell
         case .four:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellOne, for: indexPath) as? OrderCellOne else { return UITableViewCell() }
@@ -74,8 +74,6 @@ extension OrderViewController: UITableViewDataSource {
        case .six:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellTwo, for: indexPath) as? OrderCellTwo else { return UITableViewCell() }
             return cell
-//        default :
-//            return UITableViewCell()
         }
     }
 }

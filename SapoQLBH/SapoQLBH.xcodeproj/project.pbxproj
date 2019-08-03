@@ -13,6 +13,10 @@
 		1C10B24222F3E6550057A478 /* OrderCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C10B24022F3E6550057A478 /* OrderCellTwo.xib */; };
 		1C10B24522F3F16E0057A478 /* OrderCellSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10B24322F3F16E0057A478 /* OrderCellSeparator.swift */; };
 		1C10B24622F3F16E0057A478 /* OrderCellSeparator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C10B24422F3F16E0057A478 /* OrderCellSeparator.xib */; };
+		1C9B9BE222F56B8200A86131 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE022F56B8200A86131 /* ProductCell.swift */; };
+		1C9B9BE322F56B8200A86131 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE122F56B8200A86131 /* ProductCell.xib */; };
+		1C9B9BE622F577AA00A86131 /* ProductCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE422F577AA00A86131 /* ProductCellOne.swift */; };
+		1C9B9BE722F577AA00A86131 /* ProductCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE522F577AA00A86131 /* ProductCellOne.xib */; };
 		1CD099D122F1C4BE0032EC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099D022F1C4BE0032EC1D /* AppDelegate.swift */; };
 		1CD099D622F1C4BE0032EC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D422F1C4BE0032EC1D /* Main.storyboard */; };
 		1CD099D822F1C4BF0032EC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D722F1C4BF0032EC1D /* Assets.xcassets */; };
@@ -50,6 +54,10 @@
 		1C10B24022F3E6550057A478 /* OrderCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCellTwo.xib; sourceTree = "<group>"; };
 		1C10B24322F3F16E0057A478 /* OrderCellSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellSeparator.swift; sourceTree = "<group>"; };
 		1C10B24422F3F16E0057A478 /* OrderCellSeparator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCellSeparator.xib; sourceTree = "<group>"; };
+		1C9B9BE022F56B8200A86131 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		1C9B9BE122F56B8200A86131 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		1C9B9BE422F577AA00A86131 /* ProductCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellOne.swift; sourceTree = "<group>"; };
+		1C9B9BE522F577AA00A86131 /* ProductCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellOne.xib; sourceTree = "<group>"; };
 		1CD099CD22F1C4BE0032EC1D /* SapoQLBH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapoQLBH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD099D022F1C4BE0032EC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CD099D522F1C4BE0032EC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +101,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9B9BDF22F56B4200A86131 /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C9B9BE022F56B8200A86131 /* ProductCell.swift */,
+				1C9B9BE122F56B8200A86131 /* ProductCell.xib */,
+				1C9B9BE422F577AA00A86131 /* ProductCellOne.swift */,
+				1C9B9BE522F577AA00A86131 /* ProductCellOne.xib */,
+			);
+			path = ProductCell;
+			sourceTree = "<group>";
+		};
+		1C9B9BE822F57A7F00A86131 /* ReportCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReportCell;
+			sourceTree = "<group>";
+		};
 		1CD099C422F1C4BE0032EC1D = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +202,8 @@
 		1CE76A8722F2EF4400FC5530 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1C9B9BE822F57A7F00A86131 /* ReportCell */,
+				1C9B9BDF22F56B4200A86131 /* ProductCell */,
 				1CD099E222F1C9250032EC1D /* HomeViewController.swift */,
 				1CECB56F22F331E000D06840 /* OrderCell */,
 				1CD099E422F1CC0D0032EC1D /* ViewController */,
@@ -257,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9B9BE722F577AA00A86131 /* ProductCellOne.xib in Resources */,
 				1CECB57422F34D5700D06840 /* OrderCell.xib in Resources */,
 				1CE76A7E22F29EE300FC5530 /* SurveyCellTwo.xib in Resources */,
 				1CD099DB22F1C4BF0032EC1D /* LaunchScreen.storyboard in Resources */,
@@ -266,6 +295,7 @@
 				1C10B24622F3F16E0057A478 /* OrderCellSeparator.xib in Resources */,
 				1CE76A8622F2E64D00FC5530 /* SurveyCellFour.xib in Resources */,
 				1C10B24222F3E6550057A478 /* OrderCellTwo.xib in Resources */,
+				1C9B9BE322F56B8200A86131 /* ProductCell.xib in Resources */,
 				1CD099FB22F1CF810032EC1D /* Report.storyboard in Resources */,
 				1CD099D822F1C4BF0032EC1D /* Assets.xcassets in Resources */,
 				1CD099F722F1CD7C0032EC1D /* Survey.storyboard in Resources */,
@@ -299,6 +329,8 @@
 				1CE76A7422F2846200FC5530 /* SurveyTableCell.swift in Sources */,
 				1CE76A8522F2E64D00FC5530 /* SurveyCellFour.swift in Sources */,
 				1C10B24522F3F16E0057A478 /* OrderCellSeparator.swift in Sources */,
+				1C9B9BE622F577AA00A86131 /* ProductCellOne.swift in Sources */,
+				1C9B9BE222F56B8200A86131 /* ProductCell.swift in Sources */,
 				1CD099F022F1CD010032EC1D /* ReportViewController.swift in Sources */,
 				1CE76A7822F28A1500FC5530 /* Setting.swift in Sources */,
 			);

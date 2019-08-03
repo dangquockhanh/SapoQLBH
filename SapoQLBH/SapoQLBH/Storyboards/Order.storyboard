@@ -30,7 +30,7 @@
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Usj-OS-7OL">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.82363569736480713" green="0.81939250230789185" blue="0.83529627323150635" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.8706589937210083" green="0.8704802393913269" blue="0.87843245267868042" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </view>
                                 <connections>
                                     <outlet property="dataSource" destination="OxW-vG-nTj" id="hhS-EH-wvT"/>

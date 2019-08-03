@@ -18,5 +18,8 @@ class IdentifierManager {
     static let orderCell = "OrderCell"
     static let orderCellOne = "OrderCellOne"
     static let orderCellTwo = "OrderCellTwo"
-    static let  orderCellSeparator = "OrderCellSeparator"
+    static let orderCellSeparator = "OrderCellSeparator"
+    
+    static let productCell = "ProductCell"
+    static let productCellOne = "ProductCellOne"
 }

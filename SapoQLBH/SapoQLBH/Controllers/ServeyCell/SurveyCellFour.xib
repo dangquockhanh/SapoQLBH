@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SurveyCellFour" rowHeight="377" id="KGk-i7-Jjw" customClass="SurveyCellFour" customModule="SapoQLBH" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="367" height="377"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SurveyCellFour" rowHeight="388" id="KGk-i7-Jjw" customClass="SurveyCellFour" customModule="SapoQLBH" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="388"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="367" height="376.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="367" height="387.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="num-jp-O5o">
-                        <rect key="frame" x="10" y="0.0" width="347" height="366.5"/>
+                        <rect key="frame" x="10" y="0.0" width="347" height="377.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doanh thu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO9-tS-WwT">
                                 <rect key="frame" x="10" y="10" width="182" height="20.5"/>
@@ -29,15 +29,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JJE-EZ-mKx">
-                                <rect key="frame" x="33.5" y="61" width="280.5" height="244.5"/>
+                                <rect key="frame" x="50.5" y="94.5" width="246" height="188.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="ic_dashboard_intro_create_order" translatesAutoresizingMaskIntoConstraints="NO" id="yI2-A0-wce">
-                                        <rect key="frame" x="0.0" y="0.0" width="280.5" height="227.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="246" height="174"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Từ 26 thg 7 - 1 thg 8 chưa có đơn hàng nào" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7Y-B8-oZ6">
-                                        <rect key="frame" x="0.0" y="227.5" width="280.5" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Từ 28 thg 7 - 1 thg 8 chưa có đơn hàng nào" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7Y-B8-oZ6">
+                                        <rect key="frame" x="0.0" y="174" width="246" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -45,22 +45,24 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHn-yV-LY7">
-                                <rect key="frame" x="90" y="313.5" width="167" height="32"/>
+                                <rect key="frame" x="100" y="298" width="147" height="49.5"/>
+                                <color key="backgroundColor" red="0.94135457280000001" green="0.93692940469999997" blue="0.96078747509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Bắt đầu bán hàng ngay"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aO9-tS-WwT" firstAttribute="leading" secondItem="num-jp-O5o" secondAttribute="leading" constant="10" id="5ft-ba-HNK"/>
-                            <constraint firstItem="JJE-EZ-mKx" firstAttribute="height" secondItem="num-jp-O5o" secondAttribute="height" multiplier="1/1.5" id="9dt-MX-Jqn"/>
+                            <constraint firstItem="JJE-EZ-mKx" firstAttribute="height" secondItem="num-jp-O5o" secondAttribute="height" multiplier="1/2" id="9dt-MX-Jqn"/>
                             <constraint firstItem="aO9-tS-WwT" firstAttribute="top" secondItem="num-jp-O5o" secondAttribute="top" constant="10" id="TNR-oI-KkC"/>
                             <constraint firstAttribute="trailing" secondItem="aO9-tS-WwT" secondAttribute="trailing" constant="155" id="gQ5-X0-r9H"/>
-                            <constraint firstItem="eHn-yV-LY7" firstAttribute="leading" secondItem="num-jp-O5o" secondAttribute="leading" constant="90" id="j2T-kf-oAi"/>
-                            <constraint firstItem="JJE-EZ-mKx" firstAttribute="centerY" secondItem="num-jp-O5o" secondAttribute="centerY" id="k2j-xb-YYN"/>
-                            <constraint firstItem="eHn-yV-LY7" firstAttribute="top" secondItem="JJE-EZ-mKx" secondAttribute="bottom" constant="8" id="kA1-7c-1QL"/>
-                            <constraint firstAttribute="trailing" secondItem="eHn-yV-LY7" secondAttribute="trailing" constant="90" id="pIS-sg-CNJ"/>
+                            <constraint firstItem="eHn-yV-LY7" firstAttribute="leading" secondItem="num-jp-O5o" secondAttribute="leading" constant="100" id="j2T-kf-oAi"/>
+                            <constraint firstItem="JJE-EZ-mKx" firstAttribute="centerY" secondItem="num-jp-O5o" secondAttribute="centerY" multiplier="1/1" id="k2j-xb-YYN"/>
+                            <constraint firstItem="eHn-yV-LY7" firstAttribute="top" secondItem="JJE-EZ-mKx" secondAttribute="bottom" constant="15" id="kA1-7c-1QL"/>
                             <constraint firstItem="JJE-EZ-mKx" firstAttribute="centerX" secondItem="num-jp-O5o" secondAttribute="centerX" id="qHe-yG-Ft6"/>
-                            <constraint firstAttribute="bottom" secondItem="eHn-yV-LY7" secondAttribute="bottom" constant="21" id="zKC-54-wYn"/>
+                            <constraint firstItem="eHn-yV-LY7" firstAttribute="centerX" secondItem="num-jp-O5o" secondAttribute="centerX" id="tzB-8g-rQw"/>
+                            <constraint firstAttribute="bottom" secondItem="eHn-yV-LY7" secondAttribute="bottom" constant="30" id="zKC-54-wYn"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -77,7 +79,7 @@
             <connections>
                 <outlet property="viewCell" destination="num-jp-O5o" id="MnQ-v5-otf"/>
             </connections>
-            <point key="canvasLocation" x="171.73913043478262" y="223.32589285714283"/>
+            <point key="canvasLocation" x="171.73913043478262" y="227.00892857142856"/>
         </tableViewCell>
     </objects>
     <resources>
