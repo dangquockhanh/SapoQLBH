@@ -23,8 +23,6 @@
 		1C6B3AE722F7FAF700CBB3A6 /* RealRevenue.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE522F7FAF700CBB3A6 /* RealRevenue.xib */; };
 		1C6B3AEA22F806EF00CBB3A6 /* Proceeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE822F806EF00CBB3A6 /* Proceeds.swift */; };
 		1C6B3AEB22F806EF00CBB3A6 /* Proceeds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE922F806EF00CBB3A6 /* Proceeds.xib */; };
-		1C6B3AEE22F80D8200CBB3A6 /* Profits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AEC22F80D8200CBB3A6 /* Profits.swift */; };
-		1C6B3AEF22F80D8200CBB3A6 /* Profits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AED22F80D8200CBB3A6 /* Profits.xib */; };
 		1C9B9BE222F56B8200A86131 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE022F56B8200A86131 /* ProductCell.swift */; };
 		1C9B9BE322F56B8200A86131 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE122F56B8200A86131 /* ProductCell.xib */; };
 		1C9B9BE622F577AA00A86131 /* ProductCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE422F577AA00A86131 /* ProductCellOne.swift */; };
@@ -39,6 +37,8 @@
 		1C9B9BFA22F6A43E00A86131 /* AddSeparatorCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BF822F6A43E00A86131 /* AddSeparatorCellTwo.xib */; };
 		1C9B9BFD22F6A58D00A86131 /* AddCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BFB22F6A58D00A86131 /* AddCellTwo.swift */; };
 		1C9B9BFE22F6A58D00A86131 /* AddCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BFC22F6A58D00A86131 /* AddCellTwo.xib */; };
+		1CC067EE22F8370D00A7E1E7 /* Profits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC067EC22F8370D00A7E1E7 /* Profits.swift */; };
+		1CC067EF22F8370D00A7E1E7 /* Profits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC067ED22F8370D00A7E1E7 /* Profits.xib */; };
 		1CC53A5A22F6B58B00FB5545 /* AddCellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53A5822F6B58B00FB5545 /* AddCellThree.swift */; };
 		1CC53A5B22F6B58B00FB5545 /* AddCellThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53A5922F6B58B00FB5545 /* AddCellThree.xib */; };
 		1CC53A5E22F6DFAF00FB5545 /* ReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53A5D22F6DFAF00FB5545 /* ReportDataSource.swift */; };
@@ -89,8 +89,6 @@
 		1C6B3AE522F7FAF700CBB3A6 /* RealRevenue.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealRevenue.xib; sourceTree = "<group>"; };
 		1C6B3AE822F806EF00CBB3A6 /* Proceeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proceeds.swift; sourceTree = "<group>"; };
 		1C6B3AE922F806EF00CBB3A6 /* Proceeds.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Proceeds.xib; sourceTree = "<group>"; };
-		1C6B3AEC22F80D8200CBB3A6 /* Profits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profits.swift; sourceTree = "<group>"; };
-		1C6B3AED22F80D8200CBB3A6 /* Profits.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profits.xib; sourceTree = "<group>"; };
 		1C9B9BE022F56B8200A86131 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		1C9B9BE122F56B8200A86131 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		1C9B9BE422F577AA00A86131 /* ProductCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellOne.swift; sourceTree = "<group>"; };
@@ -105,6 +103,8 @@
 		1C9B9BF822F6A43E00A86131 /* AddSeparatorCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSeparatorCellTwo.xib; sourceTree = "<group>"; };
 		1C9B9BFB22F6A58D00A86131 /* AddCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellTwo.swift; sourceTree = "<group>"; };
 		1C9B9BFC22F6A58D00A86131 /* AddCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCellTwo.xib; sourceTree = "<group>"; };
+		1CC067EC22F8370D00A7E1E7 /* Profits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profits.swift; sourceTree = "<group>"; };
+		1CC067ED22F8370D00A7E1E7 /* Profits.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profits.xib; sourceTree = "<group>"; };
 		1CC53A5822F6B58B00FB5545 /* AddCellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellThree.swift; sourceTree = "<group>"; };
 		1CC53A5922F6B58B00FB5545 /* AddCellThree.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCellThree.xib; sourceTree = "<group>"; };
 		1CC53A5D22F6DFAF00FB5545 /* ReportDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataSource.swift; sourceTree = "<group>"; };
@@ -160,8 +160,8 @@
 				1C6B3AE522F7FAF700CBB3A6 /* RealRevenue.xib */,
 				1C6B3AE822F806EF00CBB3A6 /* Proceeds.swift */,
 				1C6B3AE922F806EF00CBB3A6 /* Proceeds.xib */,
-				1C6B3AEC22F80D8200CBB3A6 /* Profits.swift */,
-				1C6B3AED22F80D8200CBB3A6 /* Profits.xib */,
+				1CC067EC22F8370D00A7E1E7 /* Profits.swift */,
+				1CC067ED22F8370D00A7E1E7 /* Profits.xib */,
 			);
 			path = "Ban Hang cell";
 			sourceTree = "<group>";
@@ -403,7 +403,7 @@
 				1C9B9BE722F577AA00A86131 /* ProductCellOne.xib in Resources */,
 				1C6B3ADA22F7EDEB00CBB3A6 /* TaiChinhCell.xib in Resources */,
 				1C6B3AD622F7EDDB00CBB3A6 /* KhoCell.xib in Resources */,
-				1C6B3AEF22F80D8200CBB3A6 /* Profits.xib in Resources */,
+				1CC067EF22F8370D00A7E1E7 /* Profits.xib in Resources */,
 				1C6B3AE322F7F33900CBB3A6 /* Calendar.xib in Resources */,
 				1C6B3AE722F7FAF700CBB3A6 /* RealRevenue.xib in Resources */,
 				1CECB57422F34D5700D06840 /* OrderCell.xib in Resources */,
@@ -456,7 +456,7 @@
 				1C10B23D22F3D1F90057A478 /* OrderCellOne.swift in Sources */,
 				1C9B9BEC22F66F0E00A86131 /* AddCell.swift in Sources */,
 				1CE987E822F2FB0000B4A478 /* SurveyCellFive.swift in Sources */,
-				1C6B3AEE22F80D8200CBB3A6 /* Profits.swift in Sources */,
+				1CC067EE22F8370D00A7E1E7 /* Profits.swift in Sources */,
 				1C6B3AD922F7EDEB00CBB3A6 /* TaiChinhCell.swift in Sources */,
 				1CD099EA22F1CCB10032EC1D /* SurveyViewController.swift in Sources */,
 				1CD099EE22F1CCF50032EC1D /* OrderViewController.swift in Sources */,

@@ -38,13 +38,18 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p1C-Ee-wiE">
                                 <rect key="frame" x="0.0" y="103.5" width="414" height="709.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="FVq-hX-n60">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                                 <connections>
                                     <outlet property="dataSource" destination="ele-Or-gKH" id="hyh-tB-Jv3"/>
                                     <outlet property="delegate" destination="ele-Or-gKH" id="Lbo-H2-QW8"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.82913268409999996" green="0.82807013839999999" blue="0.84663016390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.93692940469999997" blue="0.96078747509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="p1C-Ee-wiE" firstAttribute="leading" secondItem="dkY-cm-fPC" secondAttribute="leading" id="0ih-W8-viV"/>
                             <constraint firstItem="B1G-VM-eXe" firstAttribute="top" secondItem="n4B-04-hYg" secondAttribute="bottom" constant="5" id="42D-Ki-mQi"/>

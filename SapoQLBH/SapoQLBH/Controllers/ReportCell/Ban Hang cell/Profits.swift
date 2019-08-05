@@ -10,9 +10,12 @@ import UIKit
 
 class Profits: UITableViewCell {
 
+    @IBOutlet weak var viewWhite: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        viewWhite.layer.cornerRadius = 5
+        viewWhite.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

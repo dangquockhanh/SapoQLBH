@@ -20,19 +20,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-1u-QPq">
-                        <rect key="frame" x="10" y="0.0" width="394" height="399.5"/>
+                        <rect key="frame" x="10" y="0.0" width="394" height="389.5"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CJm-1g-1BO">
-                                <rect key="frame" x="8.5" y="18.5" width="114.5" height="62.5"/>
+                                <rect key="frame" x="8.5" y="19.5" width="114.5" height="58.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hàng bán chạy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMT-2T-zQR">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="31.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theo số lượng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-Te-GgP">
-                                        <rect key="frame" x="0.0" y="31.5" width="114.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="29" width="114.5" height="29.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -40,18 +40,18 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86T-t8-GpY">
-                                <rect key="frame" x="100" y="324.5" width="194" height="50"/>
+                                <rect key="frame" x="100" y="317" width="194" height="47.5"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.93692940469999997" blue="0.96078747509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Bắt đầu bán hàng ngay"/>
                             </button>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9Ol-sx-ogg">
-                                <rect key="frame" x="70.5" y="131" width="253" height="181.5"/>
+                                <rect key="frame" x="70.5" y="128" width="253" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dashboard_intro_add_product" translatesAutoresizingMaskIntoConstraints="NO" id="TSM-Ee-aI5">
-                                        <rect key="frame" x="0.0" y="0.0" width="253" height="84.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="82"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Từ 26 thg 7 - 1 thg 8 chưa bán mặt hàng nào" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfu-fP-TgU">
-                                        <rect key="frame" x="0.0" y="88.5" width="253" height="93"/>
+                                        <rect key="frame" x="0.0" y="86" width="253" height="91"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -85,7 +85,7 @@
                 <constraints>
                     <constraint firstItem="9aZ-1u-QPq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="A9g-av-oXr"/>
                     <constraint firstItem="9aZ-1u-QPq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ABO-O6-P19"/>
-                    <constraint firstAttribute="bottom" secondItem="9aZ-1u-QPq" secondAttribute="bottom" id="CRn-0h-syU"/>
+                    <constraint firstAttribute="bottom" secondItem="9aZ-1u-QPq" secondAttribute="bottom" constant="10" id="CRn-0h-syU"/>
                     <constraint firstAttribute="trailing" secondItem="9aZ-1u-QPq" secondAttribute="trailing" constant="10" id="oMD-kV-XV8"/>
                 </constraints>
             </tableViewCellContentView>
