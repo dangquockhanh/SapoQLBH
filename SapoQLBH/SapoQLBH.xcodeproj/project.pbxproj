@@ -13,10 +13,35 @@
 		1C10B24222F3E6550057A478 /* OrderCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C10B24022F3E6550057A478 /* OrderCellTwo.xib */; };
 		1C10B24522F3F16E0057A478 /* OrderCellSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10B24322F3F16E0057A478 /* OrderCellSeparator.swift */; };
 		1C10B24622F3F16E0057A478 /* OrderCellSeparator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C10B24422F3F16E0057A478 /* OrderCellSeparator.xib */; };
+		1C6B3AD522F7EDDB00CBB3A6 /* KhoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AD322F7EDDB00CBB3A6 /* KhoCell.swift */; };
+		1C6B3AD622F7EDDB00CBB3A6 /* KhoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AD422F7EDDB00CBB3A6 /* KhoCell.xib */; };
+		1C6B3AD922F7EDEB00CBB3A6 /* TaiChinhCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AD722F7EDEB00CBB3A6 /* TaiChinhCell.swift */; };
+		1C6B3ADA22F7EDEB00CBB3A6 /* TaiChinhCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AD822F7EDEB00CBB3A6 /* TaiChinhCell.xib */; };
+		1C6B3AE222F7F33900CBB3A6 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE022F7F33900CBB3A6 /* Calendar.swift */; };
+		1C6B3AE322F7F33900CBB3A6 /* Calendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE122F7F33900CBB3A6 /* Calendar.xib */; };
+		1C6B3AE622F7FAF700CBB3A6 /* RealRevenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE422F7FAF700CBB3A6 /* RealRevenue.swift */; };
+		1C6B3AE722F7FAF700CBB3A6 /* RealRevenue.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE522F7FAF700CBB3A6 /* RealRevenue.xib */; };
+		1C6B3AEA22F806EF00CBB3A6 /* Proceeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE822F806EF00CBB3A6 /* Proceeds.swift */; };
+		1C6B3AEB22F806EF00CBB3A6 /* Proceeds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AE922F806EF00CBB3A6 /* Proceeds.xib */; };
+		1C6B3AEE22F80D8200CBB3A6 /* Profits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B3AEC22F80D8200CBB3A6 /* Profits.swift */; };
+		1C6B3AEF22F80D8200CBB3A6 /* Profits.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B3AED22F80D8200CBB3A6 /* Profits.xib */; };
 		1C9B9BE222F56B8200A86131 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE022F56B8200A86131 /* ProductCell.swift */; };
 		1C9B9BE322F56B8200A86131 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE122F56B8200A86131 /* ProductCell.xib */; };
 		1C9B9BE622F577AA00A86131 /* ProductCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE422F577AA00A86131 /* ProductCellOne.swift */; };
 		1C9B9BE722F577AA00A86131 /* ProductCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BE522F577AA00A86131 /* ProductCellOne.xib */; };
+		1C9B9BEC22F66F0E00A86131 /* AddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BEA22F66F0E00A86131 /* AddCell.swift */; };
+		1C9B9BED22F66F0E00A86131 /* AddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BEB22F66F0E00A86131 /* AddCell.xib */; };
+		1C9B9BF022F6944400A86131 /* AddCellSeparatorOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BEE22F6944400A86131 /* AddCellSeparatorOne.swift */; };
+		1C9B9BF122F6944400A86131 /* AddCellSeparatorOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BEF22F6944400A86131 /* AddCellSeparatorOne.xib */; };
+		1C9B9BF422F6977800A86131 /* AddCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BF222F6977800A86131 /* AddCellOne.swift */; };
+		1C9B9BF522F6977800A86131 /* AddCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BF322F6977800A86131 /* AddCellOne.xib */; };
+		1C9B9BF922F6A43E00A86131 /* AddSeparatorCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BF722F6A43E00A86131 /* AddSeparatorCellTwo.swift */; };
+		1C9B9BFA22F6A43E00A86131 /* AddSeparatorCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BF822F6A43E00A86131 /* AddSeparatorCellTwo.xib */; };
+		1C9B9BFD22F6A58D00A86131 /* AddCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9B9BFB22F6A58D00A86131 /* AddCellTwo.swift */; };
+		1C9B9BFE22F6A58D00A86131 /* AddCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9B9BFC22F6A58D00A86131 /* AddCellTwo.xib */; };
+		1CC53A5A22F6B58B00FB5545 /* AddCellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53A5822F6B58B00FB5545 /* AddCellThree.swift */; };
+		1CC53A5B22F6B58B00FB5545 /* AddCellThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC53A5922F6B58B00FB5545 /* AddCellThree.xib */; };
+		1CC53A5E22F6DFAF00FB5545 /* ReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC53A5D22F6DFAF00FB5545 /* ReportDataSource.swift */; };
 		1CD099D122F1C4BE0032EC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099D022F1C4BE0032EC1D /* AppDelegate.swift */; };
 		1CD099D622F1C4BE0032EC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D422F1C4BE0032EC1D /* Main.storyboard */; };
 		1CD099D822F1C4BF0032EC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D722F1C4BF0032EC1D /* Assets.xcassets */; };
@@ -34,7 +59,7 @@
 		1CD09A0022F1D16F0032EC1D /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099FF22F1D16F0032EC1D /* Order.storyboard */; };
 		1CE76A7422F2846200FC5530 /* SurveyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE76A7222F2846200FC5530 /* SurveyTableCell.swift */; };
 		1CE76A7522F2846200FC5530 /* SurveyTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE76A7322F2846200FC5530 /* SurveyTableCell.xib */; };
-		1CE76A7822F28A1500FC5530 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE76A7722F28A1500FC5530 /* Setting.swift */; };
+		1CE76A7822F28A1500FC5530 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE76A7722F28A1500FC5530 /* Settings.swift */; };
 		1CE76A7D22F29EE300FC5530 /* SurveyCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE76A7B22F29EE300FC5530 /* SurveyCellTwo.swift */; };
 		1CE76A7E22F29EE300FC5530 /* SurveyCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE76A7C22F29EE300FC5530 /* SurveyCellTwo.xib */; };
 		1CE76A8122F2C78B00FC5530 /* SurveyCellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE76A7F22F2C78B00FC5530 /* SurveyCellThree.swift */; };
@@ -54,10 +79,35 @@
 		1C10B24022F3E6550057A478 /* OrderCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCellTwo.xib; sourceTree = "<group>"; };
 		1C10B24322F3F16E0057A478 /* OrderCellSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellSeparator.swift; sourceTree = "<group>"; };
 		1C10B24422F3F16E0057A478 /* OrderCellSeparator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCellSeparator.xib; sourceTree = "<group>"; };
+		1C6B3AD322F7EDDB00CBB3A6 /* KhoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhoCell.swift; sourceTree = "<group>"; };
+		1C6B3AD422F7EDDB00CBB3A6 /* KhoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KhoCell.xib; sourceTree = "<group>"; };
+		1C6B3AD722F7EDEB00CBB3A6 /* TaiChinhCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaiChinhCell.swift; sourceTree = "<group>"; };
+		1C6B3AD822F7EDEB00CBB3A6 /* TaiChinhCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaiChinhCell.xib; sourceTree = "<group>"; };
+		1C6B3AE022F7F33900CBB3A6 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		1C6B3AE122F7F33900CBB3A6 /* Calendar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Calendar.xib; sourceTree = "<group>"; };
+		1C6B3AE422F7FAF700CBB3A6 /* RealRevenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealRevenue.swift; sourceTree = "<group>"; };
+		1C6B3AE522F7FAF700CBB3A6 /* RealRevenue.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealRevenue.xib; sourceTree = "<group>"; };
+		1C6B3AE822F806EF00CBB3A6 /* Proceeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proceeds.swift; sourceTree = "<group>"; };
+		1C6B3AE922F806EF00CBB3A6 /* Proceeds.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Proceeds.xib; sourceTree = "<group>"; };
+		1C6B3AEC22F80D8200CBB3A6 /* Profits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profits.swift; sourceTree = "<group>"; };
+		1C6B3AED22F80D8200CBB3A6 /* Profits.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Profits.xib; sourceTree = "<group>"; };
 		1C9B9BE022F56B8200A86131 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		1C9B9BE122F56B8200A86131 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		1C9B9BE422F577AA00A86131 /* ProductCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellOne.swift; sourceTree = "<group>"; };
 		1C9B9BE522F577AA00A86131 /* ProductCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCellOne.xib; sourceTree = "<group>"; };
+		1C9B9BEA22F66F0E00A86131 /* AddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCell.swift; sourceTree = "<group>"; };
+		1C9B9BEB22F66F0E00A86131 /* AddCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCell.xib; sourceTree = "<group>"; };
+		1C9B9BEE22F6944400A86131 /* AddCellSeparatorOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellSeparatorOne.swift; sourceTree = "<group>"; };
+		1C9B9BEF22F6944400A86131 /* AddCellSeparatorOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCellSeparatorOne.xib; sourceTree = "<group>"; };
+		1C9B9BF222F6977800A86131 /* AddCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellOne.swift; sourceTree = "<group>"; };
+		1C9B9BF322F6977800A86131 /* AddCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCellOne.xib; sourceTree = "<group>"; };
+		1C9B9BF722F6A43E00A86131 /* AddSeparatorCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSeparatorCellTwo.swift; sourceTree = "<group>"; };
+		1C9B9BF822F6A43E00A86131 /* AddSeparatorCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSeparatorCellTwo.xib; sourceTree = "<group>"; };
+		1C9B9BFB22F6A58D00A86131 /* AddCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellTwo.swift; sourceTree = "<group>"; };
+		1C9B9BFC22F6A58D00A86131 /* AddCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCellTwo.xib; sourceTree = "<group>"; };
+		1CC53A5822F6B58B00FB5545 /* AddCellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellThree.swift; sourceTree = "<group>"; };
+		1CC53A5922F6B58B00FB5545 /* AddCellThree.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCellThree.xib; sourceTree = "<group>"; };
+		1CC53A5D22F6DFAF00FB5545 /* ReportDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataSource.swift; sourceTree = "<group>"; };
 		1CD099CD22F1C4BE0032EC1D /* SapoQLBH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapoQLBH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD099D022F1C4BE0032EC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CD099D522F1C4BE0032EC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,7 +127,7 @@
 		1CD099FF22F1D16F0032EC1D /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
 		1CE76A7222F2846200FC5530 /* SurveyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTableCell.swift; sourceTree = "<group>"; };
 		1CE76A7322F2846200FC5530 /* SurveyTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyTableCell.xib; sourceTree = "<group>"; };
-		1CE76A7722F28A1500FC5530 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		1CE76A7722F28A1500FC5530 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1CE76A7B22F29EE300FC5530 /* SurveyCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCellTwo.swift; sourceTree = "<group>"; };
 		1CE76A7C22F29EE300FC5530 /* SurveyCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyCellTwo.xib; sourceTree = "<group>"; };
 		1CE76A7F22F2C78B00FC5530 /* SurveyCellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCellThree.swift; sourceTree = "<group>"; };
@@ -101,6 +151,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C6B3ADB22F7F20400CBB3A6 /* Ban Hang cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B3AE022F7F33900CBB3A6 /* Calendar.swift */,
+				1C6B3AE122F7F33900CBB3A6 /* Calendar.xib */,
+				1C6B3AE422F7FAF700CBB3A6 /* RealRevenue.swift */,
+				1C6B3AE522F7FAF700CBB3A6 /* RealRevenue.xib */,
+				1C6B3AE822F806EF00CBB3A6 /* Proceeds.swift */,
+				1C6B3AE922F806EF00CBB3A6 /* Proceeds.xib */,
+				1C6B3AEC22F80D8200CBB3A6 /* Profits.swift */,
+				1C6B3AED22F80D8200CBB3A6 /* Profits.xib */,
+			);
+			path = "Ban Hang cell";
+			sourceTree = "<group>";
+		};
+		1C6B3ADC22F7F21600CBB3A6 /* Kho cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B3AD322F7EDDB00CBB3A6 /* KhoCell.swift */,
+				1C6B3AD422F7EDDB00CBB3A6 /* KhoCell.xib */,
+			);
+			path = "Kho cell";
+			sourceTree = "<group>";
+		};
+		1C6B3ADD22F7F22B00CBB3A6 /* Tai chinh cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B3AD722F7EDEB00CBB3A6 /* TaiChinhCell.swift */,
+				1C6B3AD822F7EDEB00CBB3A6 /* TaiChinhCell.xib */,
+			);
+			path = "Tai chinh cell";
+			sourceTree = "<group>";
+		};
 		1C9B9BDF22F56B4200A86131 /* ProductCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +198,39 @@
 		1C9B9BE822F57A7F00A86131 /* ReportCell */ = {
 			isa = PBXGroup;
 			children = (
+				1C6B3ADD22F7F22B00CBB3A6 /* Tai chinh cell */,
+				1C6B3ADC22F7F21600CBB3A6 /* Kho cell */,
+				1C6B3ADB22F7F20400CBB3A6 /* Ban Hang cell */,
 			);
 			path = ReportCell;
+			sourceTree = "<group>";
+		};
+		1C9B9BE922F66EEF00A86131 /* AddCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C9B9BEA22F66F0E00A86131 /* AddCell.swift */,
+				1C9B9BEB22F66F0E00A86131 /* AddCell.xib */,
+				1C9B9BEE22F6944400A86131 /* AddCellSeparatorOne.swift */,
+				1C9B9BEF22F6944400A86131 /* AddCellSeparatorOne.xib */,
+				1C9B9BF222F6977800A86131 /* AddCellOne.swift */,
+				1C9B9BF322F6977800A86131 /* AddCellOne.xib */,
+				1C9B9BF722F6A43E00A86131 /* AddSeparatorCellTwo.swift */,
+				1C9B9BF822F6A43E00A86131 /* AddSeparatorCellTwo.xib */,
+				1C9B9BFB22F6A58D00A86131 /* AddCellTwo.swift */,
+				1C9B9BFC22F6A58D00A86131 /* AddCellTwo.xib */,
+				1CC53A5822F6B58B00FB5545 /* AddCellThree.swift */,
+				1CC53A5922F6B58B00FB5545 /* AddCellThree.xib */,
+			);
+			path = AddCell;
+			sourceTree = "<group>";
+		};
+		1CC53A5C22F6DF7F00FB5545 /* Report Page */ = {
+			isa = PBXGroup;
+			children = (
+				1CD099EF22F1CD010032EC1D /* ReportViewController.swift */,
+				1CC53A5D22F6DFAF00FB5545 /* ReportDataSource.swift */,
+			);
+			path = "Report Page";
 			sourceTree = "<group>";
 		};
 		1CD099C422F1C4BE0032EC1D = {
@@ -152,10 +266,10 @@
 		1CD099E422F1CC0D0032EC1D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1CC53A5C22F6DF7F00FB5545 /* Report Page */,
 				1CD099E922F1CCB10032EC1D /* SurveyViewController.swift */,
 				1CD099ED22F1CCF50032EC1D /* OrderViewController.swift */,
 				1CD099EB22F1CCC80032EC1D /* ProductViewController.swift */,
-				1CD099EF22F1CD010032EC1D /* ReportViewController.swift */,
 				1CD099F122F1CD220032EC1D /* AddViewController.swift */,
 			);
 			path = ViewController;
@@ -194,7 +308,7 @@
 		1CE76A7622F28A0200FC5530 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1CE76A7722F28A1500FC5530 /* Setting.swift */,
+				1CE76A7722F28A1500FC5530 /* Settings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -202,6 +316,7 @@
 		1CE76A8722F2EF4400FC5530 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1C9B9BE922F66EEF00A86131 /* AddCell */,
 				1C9B9BE822F57A7F00A86131 /* ReportCell */,
 				1C9B9BDF22F56B4200A86131 /* ProductCell */,
 				1CD099E222F1C9250032EC1D /* HomeViewController.swift */,
@@ -286,21 +401,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9B9BE722F577AA00A86131 /* ProductCellOne.xib in Resources */,
+				1C6B3ADA22F7EDEB00CBB3A6 /* TaiChinhCell.xib in Resources */,
+				1C6B3AD622F7EDDB00CBB3A6 /* KhoCell.xib in Resources */,
+				1C6B3AEF22F80D8200CBB3A6 /* Profits.xib in Resources */,
+				1C6B3AE322F7F33900CBB3A6 /* Calendar.xib in Resources */,
+				1C6B3AE722F7FAF700CBB3A6 /* RealRevenue.xib in Resources */,
 				1CECB57422F34D5700D06840 /* OrderCell.xib in Resources */,
+				1C9B9BFA22F6A43E00A86131 /* AddSeparatorCellTwo.xib in Resources */,
 				1CE76A7E22F29EE300FC5530 /* SurveyCellTwo.xib in Resources */,
+				1CC53A5B22F6B58B00FB5545 /* AddCellThree.xib in Resources */,
 				1CD099DB22F1C4BF0032EC1D /* LaunchScreen.storyboard in Resources */,
+				1C6B3AEB22F806EF00CBB3A6 /* Proceeds.xib in Resources */,
 				1CD099F922F1CF730032EC1D /* Product.storyboard in Resources */,
 				1CD099FD22F1CF930032EC1D /* Add.storyboard in Resources */,
 				1CD09A0022F1D16F0032EC1D /* Order.storyboard in Resources */,
 				1C10B24622F3F16E0057A478 /* OrderCellSeparator.xib in Resources */,
 				1CE76A8622F2E64D00FC5530 /* SurveyCellFour.xib in Resources */,
+				1C9B9BFE22F6A58D00A86131 /* AddCellTwo.xib in Resources */,
 				1C10B24222F3E6550057A478 /* OrderCellTwo.xib in Resources */,
 				1C9B9BE322F56B8200A86131 /* ProductCell.xib in Resources */,
 				1CD099FB22F1CF810032EC1D /* Report.storyboard in Resources */,
 				1CD099D822F1C4BF0032EC1D /* Assets.xcassets in Resources */,
+				1C9B9BED22F66F0E00A86131 /* AddCell.xib in Resources */,
 				1CD099F722F1CD7C0032EC1D /* Survey.storyboard in Resources */,
+				1C9B9BF122F6944400A86131 /* AddCellSeparatorOne.xib in Resources */,
 				1C10B23E22F3D1F90057A478 /* OrderCellOne.xib in Resources */,
 				1CE76A7522F2846200FC5530 /* SurveyTableCell.xib in Resources */,
+				1C9B9BF522F6977800A86131 /* AddCellOne.xib in Resources */,
 				1CE76A8222F2C78B00FC5530 /* SurveyCellThree.xib in Resources */,
 				1CE987E922F2FB0000B4A478 /* SurveyCellFive.xib in Resources */,
 				1CD099D622F1C4BE0032EC1D /* Main.storyboard in Resources */,
@@ -314,25 +441,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9B9BF022F6944400A86131 /* AddCellSeparatorOne.swift in Sources */,
 				1CD099EC22F1CCC80032EC1D /* ProductViewController.swift in Sources */,
+				1C9B9BF422F6977800A86131 /* AddCellOne.swift in Sources */,
 				1CE76A8122F2C78B00FC5530 /* SurveyCellThree.swift in Sources */,
 				1CECB57322F34D5700D06840 /* OrderCell.swift in Sources */,
 				1C10B24122F3E6550057A478 /* OrderCellTwo.swift in Sources */,
+				1C9B9BFD22F6A58D00A86131 /* AddCellTwo.swift in Sources */,
 				1CD099F222F1CD220032EC1D /* AddViewController.swift in Sources */,
 				1CD099D122F1C4BE0032EC1D /* AppDelegate.swift in Sources */,
+				1C6B3AD522F7EDDB00CBB3A6 /* KhoCell.swift in Sources */,
 				1CD099E322F1C9250032EC1D /* HomeViewController.swift in Sources */,
 				1CE76A7D22F29EE300FC5530 /* SurveyCellTwo.swift in Sources */,
 				1C10B23D22F3D1F90057A478 /* OrderCellOne.swift in Sources */,
+				1C9B9BEC22F66F0E00A86131 /* AddCell.swift in Sources */,
 				1CE987E822F2FB0000B4A478 /* SurveyCellFive.swift in Sources */,
+				1C6B3AEE22F80D8200CBB3A6 /* Profits.swift in Sources */,
+				1C6B3AD922F7EDEB00CBB3A6 /* TaiChinhCell.swift in Sources */,
 				1CD099EA22F1CCB10032EC1D /* SurveyViewController.swift in Sources */,
 				1CD099EE22F1CCF50032EC1D /* OrderViewController.swift in Sources */,
 				1CE76A7422F2846200FC5530 /* SurveyTableCell.swift in Sources */,
 				1CE76A8522F2E64D00FC5530 /* SurveyCellFour.swift in Sources */,
+				1CC53A5A22F6B58B00FB5545 /* AddCellThree.swift in Sources */,
 				1C10B24522F3F16E0057A478 /* OrderCellSeparator.swift in Sources */,
+				1CC53A5E22F6DFAF00FB5545 /* ReportDataSource.swift in Sources */,
 				1C9B9BE622F577AA00A86131 /* ProductCellOne.swift in Sources */,
 				1C9B9BE222F56B8200A86131 /* ProductCell.swift in Sources */,
+				1C6B3AEA22F806EF00CBB3A6 /* Proceeds.swift in Sources */,
 				1CD099F022F1CD010032EC1D /* ReportViewController.swift in Sources */,
-				1CE76A7822F28A1500FC5530 /* Setting.swift in Sources */,
+				1C6B3AE622F7FAF700CBB3A6 /* RealRevenue.swift in Sources */,
+				1CE76A7822F28A1500FC5530 /* Settings.swift in Sources */,
+				1C9B9BF922F6A43E00A86131 /* AddSeparatorCellTwo.swift in Sources */,
+				1C6B3AE222F7F33900CBB3A6 /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

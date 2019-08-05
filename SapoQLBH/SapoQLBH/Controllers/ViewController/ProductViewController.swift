@@ -8,13 +8,6 @@
 
 import UIKit
 
-enum ProductCellType: Int {
-    case one = 0
-    case two
-    case three
-    case four
-}
-
 class ProductViewController: UIViewController {
     
     @IBOutlet weak var productTableView: UITableView!
@@ -43,7 +36,7 @@ extension ProductViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cellType = ProductCellType(rawValue: indexPath.row) else { return UITableViewCell() }
+        guard let cellType = SectionType(rawValue: indexPath.row) else { return UITableViewCell() }
         switch cellType {
         case .one:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.productCell, for: indexPath) as? ProductCell else { return UITableViewCell() }
@@ -67,6 +60,8 @@ extension ProductViewController: UITableViewDataSource {
             cell.imageView?.image = #imageLiteral(resourceName: "ic_product_dashboard_stock_adjustment")
             cell.textLabel?.text = "Kiểm hàng"
             return cell
+        default:
+            return UITableViewCell()
         }
     }
 }

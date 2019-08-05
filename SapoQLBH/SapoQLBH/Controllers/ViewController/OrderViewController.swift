@@ -8,15 +8,6 @@
 
 import UIKit
 
-enum OrderCellType: Int {
-    case one = 0
-    case two
-    case three
-    case four
-    case five
-    case six
-}
-
 class OrderViewController: UIViewController {
 
     @IBOutlet weak var orderTableView: UITableView!
@@ -46,7 +37,7 @@ extension OrderViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       guard let cellType = OrderCellType(rawValue: indexPath.row) else { return UITableViewCell() }
+       guard let cellType = SectionType(rawValue: indexPath.row) else { return UITableViewCell() }
         switch cellType  {
         case .one:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCell, for: indexPath) as? OrderCell else { return UITableViewCell() }
@@ -74,12 +65,13 @@ extension OrderViewController: UITableViewDataSource {
        case .six:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.orderCellTwo, for: indexPath) as? OrderCellTwo else { return UITableViewCell() }
             return cell
+        default:
+            return UITableViewCell()
         }
     }
 }
 
 extension OrderViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
@@ -94,9 +86,5 @@ extension OrderViewController: UITableViewDelegate {
             return CGFloat()
         }
     }
-    
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        
-//    }
 }
 

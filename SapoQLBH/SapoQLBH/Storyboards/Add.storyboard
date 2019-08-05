@@ -21,15 +21,41 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4B-04-hYg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
                                 <items>
-                                    <navigationItem title="Thêm" prompt=" " id="8qO-VQ-11J"/>
+                                    <navigationItem title="Thêm" prompt=" " id="8qO-VQ-11J">
+                                        <barButtonItem key="rightBarButtonItem" image="EditIcon" id="EUs-iw-Rnh">
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nhat-anh-photo.mysapo.vn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1G-VM-eXe">
+                                <rect key="frame" x="0.0" y="83" width="414" height="20.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p1C-Ee-wiE">
+                                <rect key="frame" x="0.0" y="103.5" width="414" height="709.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ele-Or-gKH" id="hyh-tB-Jv3"/>
+                                    <outlet property="delegate" destination="ele-Or-gKH" id="Lbo-H2-QW8"/>
+                                </connections>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82913268409999996" green="0.82807013839999999" blue="0.84663016390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="p1C-Ee-wiE" firstAttribute="leading" secondItem="dkY-cm-fPC" secondAttribute="leading" id="0ih-W8-viV"/>
+                            <constraint firstItem="B1G-VM-eXe" firstAttribute="top" secondItem="n4B-04-hYg" secondAttribute="bottom" constant="5" id="42D-Ki-mQi"/>
                             <constraint firstItem="n4B-04-hYg" firstAttribute="leading" secondItem="dkY-cm-fPC" secondAttribute="leading" id="6oM-7j-n7a"/>
+                            <constraint firstItem="p1C-Ee-wiE" firstAttribute="top" secondItem="B1G-VM-eXe" secondAttribute="bottom" id="BpO-aj-clx"/>
+                            <constraint firstItem="dkY-cm-fPC" firstAttribute="trailing" secondItem="B1G-VM-eXe" secondAttribute="trailing" id="LDc-Dc-hNd"/>
                             <constraint firstItem="n4B-04-hYg" firstAttribute="top" secondItem="MdW-vh-DBm" secondAttribute="top" id="LOv-WK-OHI"/>
                             <constraint firstItem="n4B-04-hYg" firstAttribute="trailing" secondItem="dkY-cm-fPC" secondAttribute="trailing" id="RbP-up-dQi"/>
+                            <constraint firstItem="p1C-Ee-wiE" firstAttribute="trailing" secondItem="dkY-cm-fPC" secondAttribute="trailing" id="f4G-oS-F1w"/>
+                            <constraint firstItem="p1C-Ee-wiE" firstAttribute="bottom" secondItem="dkY-cm-fPC" secondAttribute="bottom" id="p9L-uc-Nn5"/>
+                            <constraint firstItem="B1G-VM-eXe" firstAttribute="leading" secondItem="dkY-cm-fPC" secondAttribute="leading" id="u4r-gK-jLe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dkY-cm-fPC"/>
                     </view>
@@ -42,13 +68,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addTableView" destination="p1C-Ee-wiE" id="Re4-Yz-nfP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETV-br-6QA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.91304347826099" y="65.217391304347828"/>
+            <point key="canvasLocation" x="973.91304347826099" y="64.955357142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="EditIcon" width="18" height="18"/>
         <image name="ic_tab_bar_more" width="22" height="22"/>
         <image name="icons8-pencil_tip" width="26.666666030883789" height="26.666666030883789"/>
     </resources>

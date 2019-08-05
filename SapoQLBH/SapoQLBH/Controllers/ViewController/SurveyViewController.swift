@@ -8,15 +8,6 @@
 
 import UIKit
 
-// Define surveys cell
-enum SurveyCellType: Int {
-    case one = 0
-    case two
-    case three
-    case four
-    case five
-}
-
 class SurveyViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -75,7 +66,7 @@ extension SurveyViewController: UITableViewDataSource {
         let defaultCell = UITableViewCell()
         // Using enum servey cell type
         // Check before using
-        guard let cellType = SurveyCellType(rawValue: indexPath.row) else { return defaultCell }
+        guard let cellType = SectionType(rawValue: indexPath.row) else { return defaultCell }
         
         switch cellType {
         case .one:
@@ -100,11 +91,13 @@ extension SurveyViewController: UITableViewDataSource {
                 return defaultCell
             }
             return cell
-        default:
+        case .five:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.surveyTableViewCellFive, for: indexPath) as? SurveyCellFive else {
                 return defaultCell
             }
             return cell
+        default:
+            return UITableViewCell()
         }
     }
 }
@@ -112,7 +105,7 @@ extension SurveyViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension SurveyViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        guard let cellType = SurveyCellType(rawValue: indexPath.row) else { return 0 }
+        guard let cellType = SectionType(rawValue: indexPath.row) else { return 0 }
         
         switch cellType {
         case .one:
@@ -121,8 +114,10 @@ extension SurveyViewController: UITableViewDelegate {
             return 170
         case .three:
             return 150
-        default:
+        case .four, .five:
             return 350
+        default:
+            return 0
         }
     }
 }
