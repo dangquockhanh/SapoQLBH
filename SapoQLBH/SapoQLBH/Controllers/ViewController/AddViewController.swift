@@ -25,23 +25,18 @@ class AddViewController: UIViewController {
                               AddModel(name: "Cấu hình", image: #imageLiteral(resourceName: "ic_settings_permission")),
                               AddModel(name: "Hỗ trợ", image: #imageLiteral(resourceName: "ic_more_support"))]
     
-    var modelsEdit: [AddModel] = [AddModel(name: "Tổng quan", image: #imageLiteral(resourceName: "ic_tab_bar_dashboard")),
-                                      AddModel(name: "Đơn hàng", image: #imageLiteral(resourceName: "ic_tab_bar_order")),
-                                      AddModel(name: "Báo cáo", image: #imageLiteral(resourceName: "ic_tab_bar_report")),
-                                      AddModel(name: "Thông báo", image: #imageLiteral(resourceName: "ic_tab_bar_notification")),
-                                      AddModel(name: "Đối tác", image: #imageLiteral(resourceName: "ic_tab_bar_partner")),
-                                      AddModel(name: "Sản phẩm", image: #imageLiteral(resourceName: "ic_stock_permission")),
-                                      AddModel(name: "Cấu hình", image: #imageLiteral(resourceName: "ic_settings_permission")),
-                                      AddModel(name: "Hỗ trợ", image: #imageLiteral(resourceName: "ic_more_support"))
-    ]
-    
     var newModelsEdit: [AddModel] = []
+    var listIndex: [Int] = [Int](0...5)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAddCell()
         self.isEdit = false
-        self.newModelsEdit = modelsEdit
+        self.newModelsEdit = HelperData.modelsEdit
+    }
+    
+    static func newInstance() -> AddViewController {
+        return (Supports.instantiateViewController(IdentifierManager.add, with: IdentifierManager.addViewController) as? AddViewController) ?? AddViewController()
     }
     
     func setupAddCell() {
@@ -117,6 +112,12 @@ extension AddViewController: UITableViewDataSource {
         let move = newModelsEdit[sourceIndexPath.row]
         newModelsEdit.remove(at: sourceIndexPath.row)
         newModelsEdit.insert(move, at: destinationIndexPath.row)
+        let indexChange = listIndex[sourceIndexPath.row]
+        listIndex.remove(at: sourceIndexPath.row)
+        listIndex.insert(indexChange, at: destinationIndexPath.row)
+        
+        let userInfo: [String: Any] = ["listIndex": listIndex]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "MoveCell"), object: nil, userInfo: userInfo)
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {

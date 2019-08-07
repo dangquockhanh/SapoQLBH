@@ -24,6 +24,10 @@ class SurveyViewController: UIViewController {
         self.setupRefreshControl()
     }
     
+    static func newInstance() -> SurveyViewController {
+        return (Supports.instantiateViewController(IdentifierManager.survey, with: IdentifierManager.surveyViewController) as? SurveyViewController) ?? SurveyViewController()
+    }
+    
     func registerCell() {
         tableView.register(UINib(nibName: IdentifierManager.surveyTableViewCellOne, bundle: nil), forCellReuseIdentifier: IdentifierManager.surveyTableViewCellOne)
         tableView.register(UINib(nibName: IdentifierManager.surveyTableViewCellTwo, bundle: nil), forCellReuseIdentifier: IdentifierManager.surveyTableViewCellTwo)

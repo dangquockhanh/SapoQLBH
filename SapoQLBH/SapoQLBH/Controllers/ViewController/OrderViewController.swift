@@ -18,6 +18,10 @@ class OrderViewController: UIViewController {
     
     }
     
+    static func newInstance() -> OrderViewController {
+        return (Supports.instantiateViewController(IdentifierManager.order, with: IdentifierManager.orderViewController) as? OrderViewController) ?? OrderViewController()
+    }
+    
     func setupOrderCell() {
         orderTableView.register(UINib(nibName: IdentifierManager.orderCell, bundle: nil), forCellReuseIdentifier: IdentifierManager.orderCell)
          orderTableView.register(UINib(nibName: IdentifierManager.orderCellOne, bundle: nil), forCellReuseIdentifier: IdentifierManager.orderCellOne)

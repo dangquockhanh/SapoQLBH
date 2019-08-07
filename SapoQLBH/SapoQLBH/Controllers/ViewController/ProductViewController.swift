@@ -18,6 +18,10 @@ class ProductViewController: UIViewController {
         productTableView.separatorColor = .lightGray
     }
     
+    static func newInstance() -> ProductViewController {
+        return (Supports.instantiateViewController(IdentifierManager.product, with: IdentifierManager.productViewController) as? ProductViewController) ?? ProductViewController()
+    }
+    
     func setupProductCell() {
         productTableView.register(UINib(nibName: IdentifierManager.productCell, bundle: nil), forCellReuseIdentifier: IdentifierManager.productCell)
         productTableView.register(UINib(nibName: IdentifierManager.productCellOne, bundle: nil), forCellReuseIdentifier: IdentifierManager.productCellOne)

@@ -13,7 +13,7 @@
         <!--Báo cáo-->
         <scene sceneID="ivT-1c-X2n">
             <objects>
-                <viewController storyboardIdentifier="ReportStoryboard" id="HfV-zV-QiK" customClass="ReportViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReportViewController" id="HfV-zV-QiK" customClass="ReportViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ke-qu-Jul">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,9 +179,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="loa-Xu-uuc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Báo cáo" image="ic_tab_bar_report" selectedImage="ic_tab_bar_report" id="iCZ-wo-3l3">
-                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Báo cáo" id="70e-x1-bx6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -202,7 +199,4 @@
             <point key="canvasLocation" x="986.95652173913049" y="-7.3660714285714279"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ic_tab_bar_report" width="22" height="22"/>
-    </resources>
 </document>

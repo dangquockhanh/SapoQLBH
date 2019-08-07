@@ -13,7 +13,7 @@
         <!--Đơn hàng-->
         <scene sceneID="xOB-m5-u22">
             <objects>
-                <viewController storyboardIdentifier="OrderStoryboard" id="OxW-vG-nTj" customClass="OrderViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderViewController" id="OxW-vG-nTj" customClass="OrderViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ZZ-m3-Kbf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,9 +50,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uAg-v4-ihI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Đơn hàng" image="ic_tab_bar_order" selectedImage="ic_tab_bar_order" id="aMM-rh-YCD">
-                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Đơn hàng" id="Ru0-bA-NPM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -64,7 +61,4 @@
             <point key="canvasLocation" x="1150.7246376811595" y="-253.53260869565219"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ic_tab_bar_order" width="22" height="22"/>
-    </resources>
 </document>

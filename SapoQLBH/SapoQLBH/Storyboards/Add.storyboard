@@ -13,7 +13,7 @@
         <!--Tên chủ cửa hàng-->
         <scene sceneID="7am-xY-ZgQ">
             <objects>
-                <viewController storyboardIdentifier="AddStoryboard" id="ele-Or-gKH" customClass="AddViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddViewController" id="ele-Or-gKH" customClass="AddViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MdW-vh-DBm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,11 +40,11 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="p1C-Ee-wiE">
                                 <rect key="frame" x="0.0" y="103.5" width="414" height="709.5"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="FVq-hX-n60">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <connections>
                                     <outlet property="dataSource" destination="ele-Or-gKH" id="hyh-tB-Jv3"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.93692940469999997" blue="0.96078747509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="p1C-Ee-wiE" firstAttribute="leading" secondItem="dkY-cm-fPC" secondAttribute="leading" id="0ih-W8-viV"/>
                             <constraint firstItem="B1G-VM-eXe" firstAttribute="top" secondItem="n4B-04-hYg" secondAttribute="bottom" constant="5" id="42D-Ki-mQi"/>
@@ -67,9 +67,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dkY-cm-fPC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Thêm" image="ic_tab_bar_more" selectedImage="ic_tab_bar_more" id="3we-Ys-zfl">
-                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Tên chủ cửa hàng" id="tN2-c3-cGl">
                         <barButtonItem key="rightBarButtonItem" image="icons8-pencil_tip" id="Yk9-sd-68E">
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,7 +85,6 @@
     </scenes>
     <resources>
         <image name="EditIcon" width="18" height="18"/>
-        <image name="ic_tab_bar_more" width="22" height="22"/>
         <image name="icons8-pencil_tip" width="26.666666030883789" height="26.666666030883789"/>
     </resources>
 </document>

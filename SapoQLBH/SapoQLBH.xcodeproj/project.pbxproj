@@ -44,7 +44,7 @@
 		1CD099D622F1C4BE0032EC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D422F1C4BE0032EC1D /* Main.storyboard */; };
 		1CD099D822F1C4BF0032EC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D722F1C4BF0032EC1D /* Assets.xcassets */; };
 		1CD099DB22F1C4BF0032EC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD099D922F1C4BF0032EC1D /* LaunchScreen.storyboard */; };
-		1CD099E322F1C9250032EC1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099E222F1C9250032EC1D /* HomeViewController.swift */; };
+		1CD099E322F1C9250032EC1D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099E222F1C9250032EC1D /* MainTabBarViewController.swift */; };
 		1CD099EA22F1CCB10032EC1D /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099E922F1CCB10032EC1D /* SurveyViewController.swift */; };
 		1CD099EC22F1CCC80032EC1D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099EB22F1CCC80032EC1D /* ProductViewController.swift */; };
 		1CD099EE22F1CCF50032EC1D /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD099ED22F1CCF50032EC1D /* OrderViewController.swift */; };
@@ -110,7 +110,7 @@
 		1CD099D722F1C4BF0032EC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CD099DA22F1C4BF0032EC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CD099DC22F1C4C00032EC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CD099E222F1C9250032EC1D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1CD099E222F1C9250032EC1D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		1CD099E922F1CCB10032EC1D /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		1CD099EB22F1CCC80032EC1D /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		1CD099ED22F1CCF50032EC1D /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
@@ -274,7 +274,7 @@
 			children = (
 				1CC4464822F892170005BC14 /* Models */,
 				1CE76A8722F2EF4400FC5530 /* Controllers */,
-				1CD099E222F1C9250032EC1D /* HomeViewController.swift */,
+				1CD099E222F1C9250032EC1D /* MainTabBarViewController.swift */,
 				1CE76A7622F28A0200FC5530 /* Settings */,
 				1CD099F322F1CD280032EC1D /* Storyboards */,
 				1CD099D022F1C4BE0032EC1D /* AppDelegate.swift */,
@@ -467,7 +467,7 @@
 				1CD099F222F1CD220032EC1D /* AddViewController.swift in Sources */,
 				1CD099D122F1C4BE0032EC1D /* AppDelegate.swift in Sources */,
 				1C6B3AD522F7EDDB00CBB3A6 /* KhoCell.swift in Sources */,
-				1CD099E322F1C9250032EC1D /* HomeViewController.swift in Sources */,
+				1CD099E322F1C9250032EC1D /* MainTabBarViewController.swift in Sources */,
 				1CE76A7D22F29EE300FC5530 /* SurveyCellTwo.swift in Sources */,
 				1C10B23D22F3D1F90057A478 /* OrderCellOne.swift in Sources */,
 				1C9B9BEC22F66F0E00A86131 /* AddCell.swift in Sources */,

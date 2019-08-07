@@ -34,6 +34,10 @@ class ReportViewController: UIViewController {
         registerCell()
     }
     
+    static func newInstance() -> ReportViewController {
+        return (Supports.instantiateViewController(IdentifierManager.report, with: IdentifierManager.reportViewController) as? ReportViewController) ?? ReportViewController()
+    }
+    
     func registerCell() {
         // Ban Hang Cell
         tableView.register(UINib(nibName: IdentifierManager.calendar, bundle: nil), forCellReuseIdentifier: IdentifierManager.calendar)

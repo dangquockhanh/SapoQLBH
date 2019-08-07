@@ -13,7 +13,7 @@
         <!--Chi nhánh mặc định-->
         <scene sceneID="sLn-c9-zaF">
             <objects>
-                <viewController storyboardIdentifier="SurveyStoryboard" title="Chi nhánh mặc định" id="oI5-WM-gP3" customClass="SurveyViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SurveyViewController" title="Chi nhánh mặc định" id="oI5-WM-gP3" customClass="SurveyViewController" customModule="SapoQLBH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="SurveyStoryboard" id="UDF-eW-CUY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,9 +49,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="es5-k5-UXZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tổng quan" image="ic_tab_bar_dashboard" selectedImage="ic_tab_bar_dashboard" id="UUj-gT-gpm">
-                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Chi nhánh mặc định" id="3RM-9t-Wvr">
                         <barButtonItem key="rightBarButtonItem" image="icons8-location_filled" id="TdO-mR-Xn4">
                             <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,7 +66,6 @@
     </scenes>
     <resources>
         <image name="ic_dashboard_location_filter" width="16" height="22"/>
-        <image name="ic_tab_bar_dashboard" width="22" height="22"/>
         <image name="icons8-location_filled" width="25" height="25"/>
     </resources>
 </document>
