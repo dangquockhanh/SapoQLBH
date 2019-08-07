@@ -40,11 +40,9 @@ class IdentifierManager {
     
     // Add Page
     static let addCell = "AddCell"
-    static let addCellSeparatorOne = "AddCellSeparatorOne"
     static let addCellOne = "AddCellOne"
-    static let addSeparatorCellTwo = "AddSeparatorCellTwo"
     static let addCellTwo = "AddCellTwo"
-     static let addCellThree = "AddCellThree"
+    static let addCellThree = "AddCellThree"
 
 }
 

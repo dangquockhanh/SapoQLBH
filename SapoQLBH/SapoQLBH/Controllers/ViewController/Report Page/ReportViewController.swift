@@ -27,8 +27,6 @@ class ReportViewController: UIViewController {
     let khoDataSource = ReportDataSource(reportDataSourceType: .kho)
     let taiChinhDataSource = ReportDataSource(reportDataSourceType: .taiChinh)
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDefault()

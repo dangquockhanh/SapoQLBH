@@ -11,90 +11,139 @@ import UIKit
 class AddViewController: UIViewController {
 
     @IBOutlet weak var addTableView: UITableView!
+    @IBOutlet weak var iconButton: UIBarButtonItem!
+    
+    var isEdit: Bool = false {
+        didSet {
+            iconButton.image = isEdit ? #imageLiteral(resourceName: "CloseIcon") : #imageLiteral(resourceName: "EditIcon")
+            self.addTableView.isEditing = isEdit
+        }
+    }
+    
+    let models: [AddModel] = [AddModel(name: "Thông báo", image: #imageLiteral(resourceName: "ic_tab_bar_notification")),
+                              AddModel(name: "Đối tác", image: #imageLiteral(resourceName: "ic_customer_menu")),
+                              AddModel(name: "Cấu hình", image: #imageLiteral(resourceName: "ic_settings_permission")),
+                              AddModel(name: "Hỗ trợ", image: #imageLiteral(resourceName: "ic_more_support"))]
+    
+    var modelsEdit: [AddModel] = [AddModel(name: "Tổng quan", image: #imageLiteral(resourceName: "ic_tab_bar_dashboard")),
+                                      AddModel(name: "Đơn hàng", image: #imageLiteral(resourceName: "ic_tab_bar_order")),
+                                      AddModel(name: "Báo cáo", image: #imageLiteral(resourceName: "ic_tab_bar_report")),
+                                      AddModel(name: "Thông báo", image: #imageLiteral(resourceName: "ic_tab_bar_notification")),
+                                      AddModel(name: "Đối tác", image: #imageLiteral(resourceName: "ic_tab_bar_partner")),
+                                      AddModel(name: "Sản phẩm", image: #imageLiteral(resourceName: "ic_stock_permission")),
+                                      AddModel(name: "Cấu hình", image: #imageLiteral(resourceName: "ic_settings_permission")),
+                                      AddModel(name: "Hỗ trợ", image: #imageLiteral(resourceName: "ic_more_support"))
+    ]
+    
+    var newModelsEdit: [AddModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAddCell()
+        self.isEdit = false
+        self.newModelsEdit = modelsEdit
     }
     
     func setupAddCell() {
         addTableView.register(UINib(nibName: IdentifierManager.addCell, bundle: nil), forCellReuseIdentifier: IdentifierManager.addCell)
-        addTableView.register(UINib(nibName: IdentifierManager.addCellSeparatorOne, bundle: nil), forCellReuseIdentifier: IdentifierManager.addCellSeparatorOne)
         addTableView.register(UINib(nibName: IdentifierManager.addCellOne, bundle: nil), forCellReuseIdentifier: IdentifierManager.addCellOne)
-        addTableView.register(UINib(nibName: IdentifierManager.addSeparatorCellTwo, bundle: nil), forCellReuseIdentifier: IdentifierManager.addSeparatorCellTwo)
         addTableView.register(UINib(nibName: IdentifierManager.addCellTwo, bundle: nil), forCellReuseIdentifier: IdentifierManager.addCellTwo)
         addTableView.register(UINib(nibName: IdentifierManager.addCellThree, bundle: nil), forCellReuseIdentifier: IdentifierManager.addCellThree)
     }
 
+    @IBAction func EditTapped(_ sender: Any) {
+        self.isEdit = !self.isEdit
+        self.addTableView.reloadData()
+    }
 }
 
 extension AddViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        switch section {
+        case 1:
+            if isEdit {
+            
+                return newModelsEdit.count
+            }
+            return models.count
+        default:
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cellType = SectionType(rawValue: indexPath.row) else { return UITableViewCell() }
-        switch cellType {
-        case .one:
+        switch indexPath.section {
+        case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCell, for: indexPath) as? AddCell else { return UITableViewCell() }
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             return cell
-        case .three:
+        case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCellOne, for: indexPath) as? AddCellOne else { return UITableViewCell() }
-            cell.textLabel?.text = "Đối tác"
-            cell.imageView?.image = #imageLiteral(resourceName: "ic_customer_menu")
-              cell.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
+            cell.textLabel?.text = isEdit ? self.newModelsEdit[indexPath.row].name : self.models[indexPath.row].name
+            cell.imageView?.image = isEdit ? self.newModelsEdit[indexPath.row].image : self.models[indexPath.row].image
+            
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
             return cell
-        case .four:
-           guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCellOne, for: indexPath) as? AddCellOne else { return UITableViewCell() }
-           cell.textLabel?.text = "Thông báo"
-           cell.imageView?.image = #imageLiteral(resourceName: "ic_tab_bar_notification")
-            return cell
-        case .five:
-             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCellOne, for: indexPath) as? AddCellOne else { return UITableViewCell() }
-             cell.textLabel?.text = "Cấu hình"
-             cell.imageView?.image = #imageLiteral(resourceName: "ic_more_settings")
-            return cell
-        case .six:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCellOne, for: indexPath) as? AddCellOne else { return UITableViewCell() }
-            cell.textLabel?.text = "Hỗ trợ"
-            cell.imageView?.image = #imageLiteral(resourceName: "ic_more_support")
-              cell.separatorInset = UIEdgeInsets(top: 0, left: 60, bottom: 0, right: 0)
-            return cell
-        case .eight:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCellTwo, for: indexPath) as? AddCellTwo else { return UITableViewCell() }
-             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-            return cell
-        case .ten:
+        case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCellThree, for: indexPath) as? AddCellThree else { return UITableViewCell() }
-             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             return cell
         default:
-            let cell = UITableViewCell()
-            cell.backgroundColor = .clear
-            cell.selectionStyle = .none
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierManager.addCellTwo, for: indexPath) as? AddCellTwo else { return UITableViewCell() }
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             return cell
         }
     }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        switch indexPath.section {
+        case 1:
+            if indexPath.row > 5 {
+                return false
+            }
+            
+            return true
+        default:
+            return false
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let move = newModelsEdit[sourceIndexPath.row]
+        newModelsEdit.remove(at: sourceIndexPath.row)
+        newModelsEdit.insert(move, at: destinationIndexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+
 }
 
 extension AddViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.row {
+        switch indexPath.section {
         case 0:
-           return 80
-        case 1:
-            return 15
-        case 2, 3, 4, 5:
-            return 50
-        case 6, 8:
-            return 15
-        case 7, 9:
-            return 50
+            return 80
         default:
-            return 0
+            return 50
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 15
     }
 }

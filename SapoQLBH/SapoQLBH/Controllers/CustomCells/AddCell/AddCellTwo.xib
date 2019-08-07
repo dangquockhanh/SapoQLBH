@@ -19,34 +19,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_external_link" translatesAutoresizingMaskIntoConstraints="NO" id="7SX-mn-EVo">
-                        <rect key="frame" x="315" y="10.5" width="50" height="50"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_external_link" translatesAutoresizingMaskIntoConstraints="NO" id="7SX-mn-EVo">
+                        <rect key="frame" x="339" y="25.5" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="Ixb-cu-3Kq"/>
-                            <constraint firstAttribute="height" constant="50" id="Mgy-n9-QTF"/>
+                            <constraint firstAttribute="width" constant="20" id="Ixb-cu-3Kq"/>
+                            <constraint firstAttribute="height" constant="20" id="Mgy-n9-QTF"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_order_dashboard_pos" translatesAutoresizingMaskIntoConstraints="NO" id="OMy-Aj-DhY">
-                        <rect key="frame" x="10" y="10.5" width="50" height="50"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_order_dashboard_pos" translatesAutoresizingMaskIntoConstraints="NO" id="OMy-Aj-DhY">
+                        <rect key="frame" x="22" y="25.5" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="E7x-Pg-O99"/>
-                            <constraint firstAttribute="height" constant="50" id="rfb-JC-D2b"/>
+                            <constraint firstAttribute="width" constant="20" id="E7x-Pg-O99"/>
+                            <constraint firstAttribute="height" constant="20" id="rfb-JC-D2b"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuyển qua Sapo POS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-Q7-cUb">
-                        <rect key="frame" x="70" y="25" width="240" height="20.5"/>
+                        <rect key="frame" x="58" y="25" width="265" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="OMy-Aj-DhY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0AD-z2-pfG"/>
+                    <constraint firstItem="OMy-Aj-DhY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="0AD-z2-pfG"/>
                     <constraint firstItem="7SX-mn-EVo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2P5-rV-xzf"/>
                     <constraint firstItem="Yca-Q7-cUb" firstAttribute="centerY" secondItem="7SX-mn-EVo" secondAttribute="centerY" id="Eal-g0-pOT"/>
-                    <constraint firstItem="7SX-mn-EVo" firstAttribute="leading" secondItem="Yca-Q7-cUb" secondAttribute="trailing" constant="5" id="OWa-yc-xtK"/>
-                    <constraint firstAttribute="trailing" secondItem="7SX-mn-EVo" secondAttribute="trailing" constant="10" id="THj-VA-8yu"/>
-                    <constraint firstItem="Yca-Q7-cUb" firstAttribute="leading" secondItem="OMy-Aj-DhY" secondAttribute="trailing" constant="10" id="bas-8D-PGa"/>
+                    <constraint firstItem="7SX-mn-EVo" firstAttribute="leading" secondItem="Yca-Q7-cUb" secondAttribute="trailing" constant="16" id="OWa-yc-xtK"/>
+                    <constraint firstAttribute="trailing" secondItem="7SX-mn-EVo" secondAttribute="trailing" constant="16" id="THj-VA-8yu"/>
+                    <constraint firstItem="Yca-Q7-cUb" firstAttribute="leading" secondItem="OMy-Aj-DhY" secondAttribute="trailing" constant="16" id="bas-8D-PGa"/>
                     <constraint firstItem="OMy-Aj-DhY" firstAttribute="centerY" secondItem="Yca-Q7-cUb" secondAttribute="centerY" id="fgk-Ay-KsC"/>
                 </constraints>
             </tableViewCellContentView>

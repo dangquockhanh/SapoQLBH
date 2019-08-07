@@ -1,18 +1,21 @@
 //
-//  AddSeparatorCellTwo.swift
+//  OrderCell.swift
 //  SapoQLBH
 //
-//  Created by Đặng Khánh  on 8/4/19.
+//  Created by Đặng Khánh  on 8/1/19.
 //  Copyright © 2019 DangKhanh. All rights reserved.
 //
 
 import UIKit
 
-class AddSeparatorCellTwo: UITableViewCell {
+class OrderCell: UITableViewCell {
 
+    @IBOutlet weak var viewCell: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        viewCell.layer.cornerRadius = 5
+        viewCell.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

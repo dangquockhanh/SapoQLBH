@@ -1,24 +1,23 @@
 //
-//  OrderCell.swift
+//  AddCell.swift
 //  SapoQLBH
 //
-//  Created by Đặng Khánh  on 8/1/19.
+//  Created by Đặng Khánh  on 8/4/19.
 //  Copyright © 2019 DangKhanh. All rights reserved.
 //
 
 import UIKit
 
-class OrderCell: UITableViewCell {
+class AddCell: UITableViewCell {
 
-    @IBOutlet weak var viewCell: UIView!
+    @IBOutlet weak var addPhotoImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewCell.layer.cornerRadius = 5
-        viewCell.clipsToBounds = true
+        
+        addPhotoImageView.layer.cornerRadius = addPhotoImageView.bounds.width / 2
+        addPhotoImageView.clipsToBounds = true
     }
-
-    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
